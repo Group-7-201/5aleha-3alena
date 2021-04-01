@@ -8,12 +8,35 @@ Names: 1- Sufian. 2- Qusai. 3- Ayah. 4- Sukina. 5- Abdallah. 6- Sumaya.
 A website for tourists to view our recommended places in Jordan according to previous people who were in Jordan using our guidance through the website.
 
 ### User Stories
-1. As a user i would like to know recommended places in the website.
-2. As a user i would loke to see the rating for each place.
-3. As a user i would like to know the opinions for the pre tourist
-4. As a user i would like to know the location for a specific place.
-5. As a user i would like to contact with a jordanian family to stay in their home.
-6. As a user i would like to see the place that i will stay in and some other stuff related.
+
+
+1. Title: Recumended places 
+   User Story sentence: As a user i would like to know recommended places in the website.
+   Feature Tasks: Featuring the recomended places that have been visited.
+   Acceptance Tests: the user should see the image and the name of the place.
+   
+2. Title: Ratings
+   User Story sentence: i would like to see the rating for each place.
+   Feature Tasks: I would like to see the most rated place.
+   Acceptance Tests: the user should see the rating for each place.
+   
+3.  Title: Testimonials
+    User Story sentence: As a user i would like to know the opinions for the pre tourist.
+    Feature Tasks: I would like to see people's opnions about the place that they have visisted.
+    Acceptance Tests: the user should see the opnions for each place.
+   
+4.  Title: location
+   User Story sentence: As a user i would like to know the location for a specific place.
+   Feature Tasks: I would like to see the location for each place.
+   Acceptance Tests: the user should see the location for each place.
+
+5.  Title: contact with a local family
+     User Story sentence: As a user i would like to contact with a local family to stay in their home.
+     Feature Tasks: I would like to see the contact information and images for each house.
+     Acceptance Tests: the user should see the  contact information and images for each house.
+     
+**Project management tool**
+![Trello](https://trello.com/b/s25VQjBi/to-do)
 
 ---
 
