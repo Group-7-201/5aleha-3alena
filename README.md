@@ -1,6 +1,12 @@
 # Group-7-Project- Team Agreements.
 
 Names: 1- Sufian. 2- Qusai. 3- Ayah. 4- Sukina. 5- Abdallah. 6- Sumaya.
+
+
+### About Our Website
+
+A website for tourists to view our recommended places in Jordan according to previous people who were in Jordan using our guidance through the website.
+
 ---
 
 ### Conflict Plan
