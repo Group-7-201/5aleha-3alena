@@ -7,6 +7,14 @@ Names: 1- Sufian. 2- Qusai. 3- Ayah. 4- Sukina. 5- Abdallah. 6- Sumaya.
 
 A website for tourists to view our recommended places in Jordan according to previous people who were in Jordan using our guidance through the website.
 
+### User Stories
+1. As a user i would like to know recommended places in the website.
+2. As a user i would loke to see the rating for each place.
+3. As a user i would like to know the opinions for the pre tourist
+4. As a user i would like to know the location for a specific place.
+5. As a user i would like to contact with a jordanian family to stay in their home.
+6. As a user i would like to see the place that i will stay in and some other stuff related.
+
 ---
 
 ### Conflict Plan
