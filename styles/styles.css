@@ -1,0 +1,383 @@
+
+#clear{
+    clear: both;
+}
+#about-container{
+    width: 100%;
+    padding-top: 60px;
+}
+#image-title{
+    float: left;
+    padding-right: 30px;
+}
+
+#title{
+    position: absolute;
+    width: 54%;
+    margin-left: 269px;
+    margin-top: 33px;
+    background: #a053277a;
+    min-height: 30vh;
+}
+
+header #header-container, #navbar, #header-logo ,img, #left-nav , ul{
+    clear: both;
+    display: inline-block;
+}
+
+#navbar{
+    width: 100%;
+    background-color: #17140d52;
+}
+#left-nav
+{
+position: absolute;
+    top: 30px;
+}
+#right-nav i{
+    padding-left: 20px;
+
+}
+#right-nav {
+    float: right;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+#left-nav ul li a{
+    padding-right: 20px;
+    color: #0A0220;
+    font-size: 25px;
+}
+
+
+header #header-container{
+    width: 100%;
+    min-height: 50vh;
+    background-image: url(https://pix10.agoda.net/city/11401/11401-7x3.jpg?s=1920x);
+    background-position: center;
+    background-size: cover;
+    background-color: #0b0714;
+}
+
+header ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+header ul li a{
+    text-decoration: none;
+    color: #0A0220;
+}
+
+
+footer{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+footer ul li{
+    list-style-type: none;
+}
+
+footer #footer-logo, #box1, #box2, #box3, #box4{
+    display: inline-block;
+    padding: 60px;
+    
+}
+
+/* --- Testimonials --- */
+
+.testimonials-heading
+{
+    padding-left: 60px;
+    padding-top: 60px;
+    font-size: 30px;
+}
+#slider-body {
+    clear: both;
+	margin: 0;
+	/* background-image: linear-gradient(90deg, #201A35, #0B0320); */
+	color: #fff;
+	font-family: sans-serif;
+	display: flex;
+	align-items: center;
+	min-height: 50vh;
+}
+.slider {
+	width: 100%;
+}
+.slider input {
+	display: none;
+}
+.testimonials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	min-height: 350px;
+	perspective: 1000px;
+	overflow: hidden;
+}
+.testimonials .item {
+	top: 20;
+	position: absolute;
+	box-sizing: border-box;
+	background-color: #0A0220;
+	padding: 30px;
+	width: 450px;
+	text-align: center;
+	transition: transform 0.4s;
+	-webkit-transform-style: preserve-3d;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	user-select: none;
+	cursor: pointer;
+}
+.testimonials .item img {
+	width: 100px;
+	border-radius: 50%;
+	border: 13px solid #3B344D;
+}
+.testimonials .item p {
+	color: #ddd;
+}
+.testimonials .item h2 {
+	font-size: 14px;
+}
+.dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dots label {
+	display: block;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: #413B52;
+	margin: 7px;
+	transition: transform 0.2s, color 0.2s;
+}
+
+/* First */
+#t-1:checked ~ .dots label[for="t-1"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-1:checked ~ .dots label[for="t-2"] {
+	transform: scale(1.5);
+}
+#t-1:checked ~ .testimonials label[for="t-1"] {
+	z-index: 4;
+}
+#t-1:checked ~ .testimonials label[for="t-2"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 3;
+}
+#t-1:checked ~ .testimonials label[for="t-3"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+	z-index: 2;
+}
+#t-1:checked ~ .testimonials label[for="t-4"] {
+	transform: translateX(900px) translateZ(-270px) rotateY(-35deg);
+	z-index: 1;
+}
+#t-1:checked ~ .testimonials label[for="t-5"] {
+	transform: translateX(1200px) translateZ(-360px) rotateY(-45deg);
+}
+
+/* Second */
+#t-2:checked ~ .dots label[for="t-1"] {
+	transform: scale(1.5);
+}
+#t-2:checked ~ .dots label[for="t-2"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-2:checked ~ .dots label[for="t-3"] {
+	transform: scale(1.5);
+}
+#t-2:checked ~ .testimonials label[for="t-1"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+}
+#t-2:checked ~ .testimonials label[for="t-2"] {
+	z-index: 3;
+}
+#t-2:checked ~ .testimonials label[for="t-3"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 2;
+}
+#t-2:checked ~ .testimonials label[for="t-4"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+	z-index: 1;
+}
+#t-2:checked ~ .testimonials label[for="t-5"] {
+	transform: translateX(900px) translateZ(-270px) rotateY(-35deg);
+}
+
+/* Third */
+#t-3:checked ~ .dots label[for="t-2"] {
+	transform: scale(1.5);
+}
+#t-3:checked ~ .dots label[for="t-3"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-3:checked ~ .dots label[for="t-4"] {
+	transform: scale(1.5);
+}
+#t-3:checked ~ .testimonials label[for="t-1"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+}
+#t-3:checked ~ .testimonials label[for="t-2"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+}
+#t-3:checked ~ .testimonials label[for="t-3"] {
+	z-index: 3;
+}
+#t-3:checked ~ .testimonials label[for="t-4"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+	z-index: 2;
+}
+#t-3:checked ~ .testimonials label[for="t-5"] {
+	transform: translateX(600px) translateZ(-180px) rotateY(-25deg);
+}
+
+/* Fourth */
+#t-4:checked ~ .dots label[for="t-3"] {
+	transform: scale(1.5);
+}
+#t-4:checked ~ .dots label[for="t-4"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-4:checked ~ .dots label[for="t-5"] {
+	transform: scale(1.5);
+}
+#t-4:checked ~ .testimonials label[for="t-1"] {
+	transform: translateX(-900px) translateZ(-270px) rotateY(35deg);
+}
+#t-4:checked ~ .testimonials label[for="t-2"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+}
+#t-4:checked ~ .testimonials label[for="t-3"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+	z-index: 2;
+}
+#t-4:checked ~ .testimonials label[for="t-4"] {
+	z-index: 3;
+}
+#t-4:checked ~ .testimonials label[for="t-5"] {
+	transform: translateX(300px) translateZ(-90px) rotateY(-15deg);
+}
+
+/* Fifth */
+#t-5:checked ~ .dots label[for="t-4"] {
+	transform: scale(1.5);
+}
+#t-5:checked ~ .dots label[for="t-5"] {
+	transform: scale(2);
+	background-color: #fff;
+}
+#t-5:checked ~ .testimonials label[for="t-1"] {
+	transform: translateX(-1200px) translateZ(-360px) rotateY(45deg);
+}
+#t-5:checked ~ .testimonials label[for="t-2"] {
+	transform: translateX(-900px) translateZ(-270px) rotateY(35deg);
+	z-index: 1;
+}
+#t-5:checked ~ .testimonials label[for="t-3"] {
+	transform: translateX(-600px) translateZ(-180px) rotateY(25deg);
+	z-index: 2;
+}
+#t-5:checked ~ .testimonials label[for="t-4"] {
+	transform: translateX(-300px) translateZ(-90px) rotateY(15deg);
+	z-index: 3;
+}
+#t-5:checked ~ .testimonials label[for="t-5"] {
+	z-index: 4;
+}
+
+
+
+/* --- Images-top-rated---*/
+
+@import url('https://fonts.googleapis.com/css?family=Amiri|Aref+Ruqaa|Cairo|Changa|El+Messiri|Harmattan|Jomhuria|Lateef|Mirza|Rakkas|Lato|Source+Sans+Pro|Ubuntu');
+#top-rated{
+    background-image: linear-gradient(-265deg, rgba(44, 216, 213, 0.45) 0%, #C5C1FF 56%, rgba(285, 196, 195, 0.71) 100%);	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+#top-rated h2 {margin:2em; letter-spacing:0.2em; color: #EEE}
+#top-rated .container{
+	margin: 3em auto;
+	width: 90%;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+}
+#top-rated .item {
+	margin: 2em;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border-radius: 20px;
+	transform: rotate(45deg);
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+	padding:0;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	margin: 0 auto;
+}
+#top-rated .item p {
+	position: absolute;
+	transform: rotate(-45deg);
+	top: 30%;
+	left: -20%;
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px 20px;
+	width:130%;
+	text-align:center;
+	color: #fff;
+	transition: all 0.3s ease-in-out;	
+}
+#top-rated .item:hover {
+	transform: none;
+	transform: scale(1.5);
+	z-index:2;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#top-rated .item:hover > p {
+	transform: none;
+	top: 0;
+	
+}
+
+
+#top-rated img {
+	width: 100%;
+	height: 100%;
+	transition: 0.3s linear;
+	transform: rotate(-45deg) scale(1.4) 
+
+	
+}
+#top-rated .item:hover > img {
+	transform: none;
+	
+}
+
+#top-rated p.ar {font-family: 'Rakkas', cursive;	font-size:1.1em;}
+
+#top-rated::-webkit-scrollbar{
+	width: 0.7em;
+	background-color: #EEE;}
+
+#top-rated::-webkit-scrollbar-thumb{
+	background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
+	border-radius:1em;
+}
