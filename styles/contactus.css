@@ -1,23 +1,253 @@
-HTML CSSResult Skip Results Iframe
-body {
-  background: #f7f7f7;
+a{
+  text-decoration: none;
+  color: black;
+}
+header #header-container, #navbar, #left-nav , ul{
+    clear: both;
+    display: inline-block;
+}
+#header-container{
+	width: 100%;
+}
+#header-container .mySlides{
+	width: 100%;
+	min-height: 50vh;
 }
 
-.form-box {
-  max-width: 500px;
-  margin: auto;
-  padding: 50px;
-  background: #ffffff;
-  border: 10px solid #f2f2f2;
+#navbar{
+    width: 100%;
+    background-color: rgb(255 255 255 / 62%);
+	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 75%);
+	position: fixed;
+    top: 0;
+    z-index: 1;
+}
+#left-nav img{
+	padding-left: 20px;
+}
+#right-nav i{
+    padding-left: 20px;
+
+}
+#social-media i{
+    padding-top: 30px;
+    padding-right: 10px;
+}
+#left-nav ul{
+	position: absolute;
+    top: 15px;
+    left: 400px;
+    display: flex;
+    justify-content: space-between;
+
+}
+#left-nav ul li{
+  justify-content: space-between;
 }
 
-h1, p {
+#left-nav ul li a{
+    padding-right: 20px;
+    color: #0A0220;
+    font-size: 25px;
+	text-decoration: none;
+  margin-right: 30px;
+}
+#left-nav ul li a:active{
+	color: #94442b;
+}
+
+/* Resources1× 0.5× 0.25×Rerun */
+
+/* main */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+
+}
+
+
+.contact{
+  position: relative;
+    min-height: 100vh;
+    padding: 125px 154px;
+    display: flex;
+    top: -15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/wp4446841.jpg);
+    background-size: cover; 
+  /* opacity: 0.5; */
+}
+
+
+.contact .content{
+  max-width: 800px;
   text-align: center;
 }
+.contact .content h2{
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+}
+.contact .content hp{
+  font-weight: 300;
+  color: #fff;
+}
+.container{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
 
-input, textarea {
+
+}
+.container .contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container .contactInfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.container .contactInfo .box .icon{
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50px;
+  font-size: 22px;
+}
+.container .contactInfo .box .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+
+} 
+.container .contactInfo .box .text h3{
+  font-weight: 500;
+  color:#00bcd4;
+
+}
+
+.contactForm
+{
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+
+}
+.contactForm h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm .inputBox{
+  position: relative;
   width: 100%;
+  margin-top: 10px;
+
+}
+.contactForm .inputBox input{
+
+  position: relative;
+  width: 100%;
+  margin-top: 40px;
+}
+.contactForm .inputBox input,.contactForm.inputBox input textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contactForm .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span
+{
+  color: #005070;
+  font-size: 12px;
+  transform: translateY(-20px);
+
+}
+.contactForm .inputBox input[type="submit"]
+{
+  width: 100px;
+  background: #005070;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media  (max-width:991px) {
+  .contact{
+    padding: 50px;
+
+  }
+  .container{
+    flex-direction: column;
+  }
+  .container .contactInfo{
+    margin-bottom: 40px;
+  }
+  .container .contactInfo .contactForm{
+    width: 100%;
+  }
+  
+}
+/* footer */
+
+#footer-container ul li a{
+  text-decoration: none;
+  color: #727272;
+}
+
+#footer-container ul p{
+	font-size: 20px;
+	padding: 10px 0px;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+}
+#footer-container{
+	background-color: #005070;
+}
+footer ul li{
+    list-style-type: none;
+}
+
+footer #footer-logo, #box1, #box2, #box3, #box4{
+    display: inline-block;
+    padding: 60px;
 }
 
 
-Resources1× 0.5× 0.25×Rerun
+
+
