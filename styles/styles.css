@@ -1,10 +1,165 @@
-* body{
+
+body{
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Source Sans Pro', sans-serif
 }
 #clear{
     clear: both;
+	
 }
+
+
+
+/*Home page banner*/
+#display-box{box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 3.6s ease;
+}
+
+.active {
+  background-color: #5f5e5e;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .75} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .75} 
+  to {opacity: 1}
+}
+
+
+/*End home page banner*/
+
+
+
+/*About us page*/
+
+#About-Us h3{
+	font-size: 30px;
+	font-weight: bolder;
+    padding: 60px 0px 40px 0px;
+    letter-spacing:0.2em;
+	color:#005070;
+	text-align: center;
+}
+
+
+#About-Us p{
+	padding: 0px 300px 0px 300px;
+	color: #70695F;
+    line-height: 25px;
+	text-align: center;
+}
+
+  
+  .container {
+	max-width: 1000px;
+	margin: 100px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+  }
+  
+  .card {
+	position: relative;
+	margin: 20px 0;
+	width: 300px;
+	height: 400px;
+	background: #fff;
+	transform-style: preserve-3d;
+	transform: perspective(2000px);
+	transition: 1s;
+	box-shadow: inset 300px 0 50px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card:hover {
+	transform: perspective(2000px) rotate(-10deg);
+	box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+	z-index: 10000;
+  }
+  .card .imageBox{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	transform-origin: left;
+	z-index: 1;
+	transition: 1s;
+  }
+  .card:hover .imageBox{
+	transform: rotateY(-135deg);
+  }
+  .card .imageBox img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  .card .datalist{
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-sizing: border-box;
+	padding: 0px;
+	text-align: justify;
+  }
+  
+/*End ofabout us page*/
+
+
 #about-container{
     width: 100%;
     padding-top: 20px;
@@ -23,53 +178,46 @@
     font-size: 30px;
 	font-weight: bolder;
     padding: 20px;
-	color:#D65528;
+	color:#005070;
 }
 #title p{
     padding: 20px;
-	color: #290C05;
+	color: #70695F;
     line-height: 25px;
 }
 
-h3{
+/* h3{
     font-size: 30px;
     padding: 60px;
     letter-spacing:0.2em;
-}
-.container h2 {
-	font-weight: bolder;
-    font-size: 30px;
-	color:#D65528;
-}
+} */
+
 .image {
-    position:relative;
+    display: flex;
+	
 }
-.image img {
+#header-container {
     width:100%;
-    vertical-align:top;
+	overflow: hidden;
+    
+
 }
-.image:after {
+/* .image:after {
     content:'\A';
     position:absolute;
     width:100%; height:100%;
     top:0; left:0;
-    background:rgba(49 23 1 / 70%);
-    opacity:0.5;
+    background: rgba(49 23 1);
+    opacity:0;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
-}
+} */
 
-header #header-container, #navbar, #left-nav , ul{
+header #navbar, #left-nav , ul{
     clear: both;
     display: inline-block;
 }
-#header-container{
-	width: 100%;
-}
-#header-container .mySlides{
-	width: 100%;
-	min-height: 50vh;
-}
+
 
 #navbar{
     width: 100%;
@@ -77,17 +225,17 @@ header #header-container, #navbar, #left-nav , ul{
 	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 75%);
 	position: fixed;
     top: 0;
+	z-index: 1;
 }
 #left-nav img{
 	padding-left: 20px;
 }
-#right-nav i{
-    padding-left: 20px;
 
-}
 #social-media i{
     padding-top: 30px;
     padding-right: 10px;
+	color: #BDBEBE;
+	
 }
 #left-nav ul{
 	position: absolute;
@@ -97,7 +245,7 @@ header #header-container, #navbar, #left-nav , ul{
 
 #left-nav ul li a{
     padding-right: 20px;
-    color: #0A0220;
+    color: #005070;
     font-size: 25px;
 	text-decoration: none;
 }
@@ -106,31 +254,19 @@ header #header-container, #navbar, #left-nav , ul{
 }
 
 
-/* header #header-container{
-    width: 100%;
-    min-height: 50vh;
-    background-image: url(https://pix10.agoda.net/city/11401/11401-7x3.jpg?s=1920x);
-    background-position: center;
-    background-size: cover;
-    background-color: #0b0714;
-} */
-
-.video{
-	width: 100%;
-	min-height: 100vh;
-}
-
 header ul li{
     list-style-type: none;
     display: inline-block;
 }
 #footer-container ul li a{
     text-decoration: none;
-    color: #727272;
+    color: #BDBEBE;
+	line-height: 30px;
 }
 #footer-container ul p{
 	font-size: 20px;
 	padding: 10px 0px;
+	color:  #BA9B7A;
 }
 
 footer{
@@ -138,15 +274,15 @@ footer{
     text-align: center;
 }
 #footer-container{
-	background-color: #cccccc;
+	background-color: #005070;
 }
 footer ul li{
     list-style-type: none;
 }
 
-footer #footer-logo, #box1, #box2, #box3, #box4{
+#footer-logo, .footer-box{
     display: inline-block;
-    padding: 60px;
+	margin: 60px;
 }
 
 /* --- Testimonials --- */
@@ -159,6 +295,8 @@ footer #footer-logo, #box1, #box2, #box3, #box4{
     font-size: 30px;
     text-align: center;
     letter-spacing:0.2em;
+	color: #005070;
+	font-weight: bolder;
 }
 #slider-body {
     clear: both;
@@ -189,9 +327,11 @@ footer #footer-logo, #box1, #box2, #box3, #box4{
 	top: 20;
 	position: absolute;
 	box-sizing: border-box;
-	background-color: #0A0220;
+	background: rgb(0,80,112);
+	background: linear-gradient(90deg, rgba(0, 80, 112, 0.952) 3%, rgba(34, 114, 94, 0.979) 88%);
 	padding: 30px;
-	width: 450px;
+	width: 650px;
+	height: 280px;
 	text-align: center;
 	transition: transform 0.4s;
 	-webkit-transform-style: preserve-3d;
@@ -202,7 +342,7 @@ footer #footer-logo, #box1, #box2, #box3, #box4{
 .testimonials .item img {
 	width: 100px;
 	border-radius: 50%;
-	border: 13px solid #3B344D;
+	border: 13px solid  #005070;
 }
 .testimonials .item p {
 	color: #ddd;
@@ -229,7 +369,7 @@ footer #footer-logo, #box1, #box2, #box3, #box4{
 /* First */
 #t-1:checked ~ .dots label[for="t-1"] {
 	transform: scale(2);
-	background-color: rgb(255, 185, 32);
+	background-color: #005070;
 }
 #t-1:checked ~ .dots label[for="t-2"] {
 	transform: scale(1.5);
@@ -259,7 +399,7 @@ footer #footer-logo, #box1, #box2, #box3, #box4{
 }
 #t-2:checked ~ .dots label[for="t-2"] {
 	transform: scale(2);
-	background-color: rgb(255, 185, 32);
+	background-color: #005070;
 }
 #t-2:checked ~ .dots label[for="t-3"] {
 	transform: scale(1.5);
@@ -288,7 +428,7 @@ footer #footer-logo, #box1, #box2, #box3, #box4{
 }
 #t-3:checked ~ .dots label[for="t-3"] {
 	transform: scale(2);
-	background-color: rgb(255, 185, 32);
+	background-color: #005070;
 }
 #t-3:checked ~ .dots label[for="t-4"] {
 	transform: scale(1.5);
@@ -316,7 +456,7 @@ footer #footer-logo, #box1, #box2, #box3, #box4{
 }
 #t-4:checked ~ .dots label[for="t-4"] {
 	transform: scale(2);
-	background-color: rgb(255, 185, 32);
+	background-color: #005070;
 }
 #t-4:checked ~ .dots label[for="t-5"] {
 	transform: scale(1.5);
@@ -344,7 +484,7 @@ footer #footer-logo, #box1, #box2, #box3, #box4{
 }
 #t-5:checked ~ .dots label[for="t-5"] {
 	transform: scale(2);
-	background-color: rgb(255, 185, 32);
+	background-color: #005070;
 }
 #t-5:checked ~ .testimonials label[for="t-1"] {
 	transform: translateX(-1200px) translateZ(-360px) rotateY(45deg);
@@ -377,10 +517,12 @@ footer #footer-logo, #box1, #box2, #box3, #box4{
     /* margin: 50px; */
     padding-left: 65px;
 }
-#top-rated h2 {
+.container h2 {
     margin: 4em; 
-    letter-spacing:0.2em; 
-    color: rgb(7, 7, 7);
+    letter-spacing:0.2em;
+	font-weight: bolder; 
+    color:#005070;
+	font-size: 30px;
 }
 #top-rated .container{
 	margin: 3em auto;
