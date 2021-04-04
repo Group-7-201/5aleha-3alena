@@ -21,78 +21,124 @@
 }
 #title h3{
     font-size: 30px;
+	font-weight: bolder;
     padding: 20px;
+	color:#D65528;
 }
 #title p{
     padding: 20px;
+	color: #290C05;
     line-height: 25px;
 }
 
 h3{
     font-size: 30px;
-    padding: 30px;
+    padding: 60px;
     letter-spacing:0.2em;
 }
 .container h2 {
+	font-weight: bolder;
     font-size: 30px;
+	color:#D65528;
+}
+.image {
+    position:relative;
+}
+.image img {
+    width:100%;
+    vertical-align:top;
+}
+.image:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(49 23 1 / 70%);
+    opacity:0.5;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
 }
 
-header #header-container, #navbar, #header-logo ,img, #left-nav , ul{
+header #header-container, #navbar, #left-nav , ul{
     clear: both;
     display: inline-block;
+}
+#header-container{
+	width: 100%;
+}
+#header-container .mySlides{
+	width: 100%;
+	min-height: 50vh;
 }
 
 #navbar{
     width: 100%;
-    background-color: #17140d52;
+    background-color: rgb(255 255 255 / 62%);
+	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 75%);
+	position: fixed;
+    top: 0;
 }
-#left-nav
-{
-position: absolute;
-    top: 30px;
+#left-nav img{
+	padding-left: 20px;
 }
 #right-nav i{
     padding-left: 20px;
 
 }
-#right-nav {
-    float: right;
+#social-media i{
     padding-top: 30px;
-    padding-right: 20px;
+    padding-right: 10px;
+}
+#left-nav ul{
+	position: absolute;
+    top: 15px;
+    left: 400px;
 }
 
 #left-nav ul li a{
     padding-right: 20px;
     color: #0A0220;
     font-size: 25px;
+	text-decoration: none;
+}
+#left-nav ul li a:active{
+	color: #94442b;
 }
 
 
-header #header-container{
+/* header #header-container{
     width: 100%;
     min-height: 50vh;
     background-image: url(https://pix10.agoda.net/city/11401/11401-7x3.jpg?s=1920x);
     background-position: center;
     background-size: cover;
     background-color: #0b0714;
+} */
+
+.video{
+	width: 100%;
+	min-height: 100vh;
 }
 
 header ul li{
     list-style-type: none;
     display: inline-block;
 }
-header ul li a{
+#footer-container ul li a{
     text-decoration: none;
-    color: #0A0220;
+    color: #727272;
 }
-
+#footer-container ul p{
+	font-size: 20px;
+	padding: 10px 0px;
+}
 
 footer{
     width: 100%;
     text-align: center;
 }
 #footer-container{
-    width: 90%;
+	background-color: #cccccc;
 }
 footer ul li{
     list-style-type: none;
@@ -108,7 +154,8 @@ footer #footer-logo, #box1, #box2, #box3, #box4{
 .testimonials-heading
 {
     padding-left: 60px;
-    padding-top: 60px;
+    padding-top: 150px;
+	padding-bottom: 50px;
     font-size: 30px;
     text-align: center;
     letter-spacing:0.2em;
@@ -331,7 +378,7 @@ footer #footer-logo, #box1, #box2, #box3, #box4{
     padding-left: 65px;
 }
 #top-rated h2 {
-    margin:2em; 
+    margin: 4em; 
     letter-spacing:0.2em; 
     color: rgb(7, 7, 7);
 }
