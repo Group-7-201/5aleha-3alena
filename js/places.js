@@ -1,4 +1,5 @@
 'use strict';
+// import Places from './app'
 
 let placesSection = document.getElementById('places');
 
@@ -14,7 +15,12 @@ let paragraphArray= [
   ' It’s 4 km canyon that can be extended to 9 km depending on the physical ability of hikers. A beautiful black basaltic canyon filled with narrow gorges,fresh natural pools, mesmerizing green vegetation and wild life. Two declimbs reaching 3 meters. At the end of the 9 km, hikers will rest near the magnificent 60 meter waterfall.',
   'This 1,300m variation in elevation, combined with the valleys year- round water flow from seven tributaries, means that Wadi Mujib enjoys a magnificent bio-diversity that is still being explored and documented today. Over 300 species of plants, 10 species of carnivores and numerous species of permanent and migratory birds have been recorded. Some of the remote mountain and valley areas are difficult to reach, and thus offer safe havens for rare species of cats, goatsand other mountain animals.',
   'The Valley of the Moon”, depicted as Mars in several Hollywood feature films Wadi Rum is an Arabian fairy-tale waiting to be discovered. Home to nomadic Bedouin tribes, Wadi Rum is a a quiet getaway of stars, sand, and sun; a perfect complement from Amman’s epicenter. Once inhabited by the Nabataeans of prehistoric times, Wadi Rum allows you to get lost in large landscapes and horizon lines. The calmness of the desert is sure calm your spirit and de-clutter your thoughts',
-  'he geological wonder of theDead Seais one of the must-dotourist attractionsin the Middle East. At more than 400 meters belowsealevel, this Great Rift Valley inland lake has an incredibly high salt content due to evaporation being the only water outlet. This is what causes the bizarre buoyancy of the water'
+  'he geological wonder of theDead Seais one of the must-dotourist attractionsin the Middle East. At more than 400 meters belowsealevel, this Great Rift Valley inland lake has an incredibly high salt content due to evaporation being the only water outlet. This is what causes the bizarre buoyancy of the water',
+  'When feeling weary, the Ma’in Hot Springs are your perfect remedy. The sight is centered between Madaba and the Dead Sea. Indulge in the hot, mineral waters and enjoy the breeze of nature. For a night’s stay, check in the Ma’in Hot Springs Spa & Resort for further pampering.',
+  'Ruins of the legendary and iconic Temple of Artemis are still standing tall at the highest point in the city of Jerash.',
+  'Dating back to the time of the erection of the Roman Theater, the Temple of Hercules is located at the top hill of the glorious Citadel of Amman, and is also visible from downtown.',
+  'Surprisingly, the rose-city has much more to offer, and tribute must be paid to Petra‘s most iconic monument, Al-Khazheh or the Treasury. This signature jaw-dropping sight will meet you the moment you finish walking through the 1200-meter Al-Siq.',
+  'Umm Qais is a historical and natural sight located in the north of Jordan, known for its ancient ruins of Gadara. Umm Qais has optimal weather and spreading natural landscapes almost all year long.'
 ];
 
 
@@ -40,10 +46,28 @@ function placesRender(){
 }
 placesRender();
 
-function rating(){
+Places.prototype.rating = function(){
+  
+//   <div class="center">
+//   <div class="stars">
+//     <input type="radio" id="five" name="rate" value="5">
+//     <label for="five"></label>
+//     <input type="radio" id="four" name="rate" value="4">
+//     <label for="four"></label>
+//     <input type="radio" id="three" name="rate" value="3">
+//     <label for="three"></label>
+//     <input type="radio" id="two" name="rate" value="2">
+//     <label for="two"></label>
+//     <input type="radio" id="one" name="rate" value="1">
+//     <label for="one"></label>
+//     <span class="result"></span>
+//   </div>
+// </div>
+
   let div1El=document.createElement('div');
   placesSection.appendChild(div1El);
-  div1El.className='container';
+  div1El.className='center';
+
   let div2El=document.createElement('div');
   div1El.appendChild(div2El);
   div2El.className='post';
@@ -51,6 +75,7 @@ function rating(){
   div1El.appendChild(div3El);
   // div3El.className='text';
   // div3El.textContent='Thanks for rating us!';
+
   let div4El=document.createElement('div');
   div1El.appendChild(div4El);
   div4El.className='edit';
@@ -89,7 +114,6 @@ function rating(){
   let div8El = document.createElement('div');
   div5El.appendChild(div8El);
   div8El.id='star';
-
 }
 
 
