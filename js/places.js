@@ -26,7 +26,6 @@ let paragraphArray= [
 
 function placesRender(){
   for (let i=0; i<Places.all.length; i++){
-    // let divEl=document.getElementById('');
     let divEl=document.createElement('div');
     placesSection.appendChild(divEl);
     let item1=document.createElement('img');
@@ -41,83 +40,29 @@ function placesRender(){
     let parEl=document.createElement('p');
     titleEl.appendChild(parEl);
     parEl.textContent=`${paragraphArray[i]}`;
-    rating();
+    // rating();
   }
 }
 placesRender();
 
-Places.prototype.rating = function(){
-  
-//   <div class="center">
-//   <div class="stars">
-//     <input type="radio" id="five" name="rate" value="5">
-//     <label for="five"></label>
-//     <input type="radio" id="four" name="rate" value="4">
-//     <label for="four"></label>
-//     <input type="radio" id="three" name="rate" value="3">
-//     <label for="three"></label>
-//     <input type="radio" id="two" name="rate" value="2">
-//     <label for="two"></label>
-//     <input type="radio" id="one" name="rate" value="1">
-//     <label for="one"></label>
-//     <span class="result"></span>
-//   </div>
-// </div>
-
+function rating(){
+  let divEl = document.createElement('div');
+  placesSection.appendChild(divEl);
+  divEl.id='rating-section';
   let div1El=document.createElement('div');
-  placesSection.appendChild(div1El);
-  div1El.className='center';
-
+  divEl.appendChild(div1El);
+  div1El.id='like-section';
+  let button1 = document.createElement('button');
+  div1El.appendChild(button1);
+  button1.textContent = '';
+  button1.setAttribute('id', 'button1');
+ 
   let div2El=document.createElement('div');
-  div1El.appendChild(div2El);
-  div2El.className='post';
-  let div3El=document.createElement('div');
-  div1El.appendChild(div3El);
-  // div3El.className='text';
-  // div3El.textContent='Thanks for rating us!';
+  divEl.appendChild(div2El);
+  div2El.id='dislike-section';
+  let button2 = document.createElement('button');
+  div2El.appendChild(button2);
+  button2.textContent = '';
+  button2.setAttribute('id', 'button2');
 
-  let div4El=document.createElement('div');
-  div1El.appendChild(div4El);
-  div4El.className='edit';
-  div4El.textContent='EDIT';
-  let div5El=document.createElement('div');
-  div1El.appendChild(div5El);
-  div5El.className='star-widget';
-  for (let i=5; i>0; i--){
-    let inputEl=document.createElement('input');
-    div5El.appendChild(inputEl);
-    inputEl.type='radio';
-    inputEl.name='rate';
-    inputEl.id=`rate-${i}`;
-    let labelEl= document.createElement('label');
-    div5El.appendChild(labelEl);
-    labelEl.for=`rate-${i}`;
-    labelEl.className='fas fa-star';
-  }
-  let formEl=document.createElement('form');
-  div5El.appendChild(formEl);
-  formEl.action='#';
-  let headerEl=document.createElement('header');
-  div5El.appendChild(headerEl);
-  let div6El=document.createElement('div');
-  div5El.appendChild(div6El);
-  div6El.className='textarea';
-  let brAtt= document.createElement('br');
-  div5El.appendChild(brAtt);
-  let div7El=document.createElement('div');
-  div5El.appendChild(div7El);
-  div7El.className='btn';
-  let buttonEl=document.createElement('button');
-  div7El.appendChild(buttonEl);
-  buttonEl.type='submit';
-  buttonEl.textContent='Post';
-  let div8El = document.createElement('div');
-  div5El.appendChild(div8El);
-  div8El.id='star';
 }
-
-
-
-
-
-
