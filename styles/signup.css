@@ -1,0 +1,70 @@
+.div1
+{
+margin-top: 30px;
+height:480px;
+width:500px;
+border:.5px solid #70695F;
+background:rgba(211, 210, 210, 0.705);
+text-align: center;
+/* background-image: url(../images/alarays\ pool.jpg); */
+}
+
+
+.in
+{
+  height:20px;
+  width:360px;
+  padding:10px;
+  border-radius: 3px ;
+  margin-bottom: 12px;
+  border-left-color: #d6ebf3;
+  border-right-color: #c5dce6;
+  
+}
+/* .d
+{
+height:35px;
+width:385px;
+
+} */
+#main
+{
+  width:400px;
+  height:30px;
+  margin-left: 450px;
+}
+/* #div2,#div4,#div5,#div6,#div7 {
+    margin-left: 60px;
+    color: #BA9B7A;
+} */
+footer{
+    margin-top: 500px;
+}
+body
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    top: 0px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../images/alarays\ pool.jpg) ;
+    background-size: cover; 
+}
+h1{
+    font-family:cursive;
+    size: 50px;
+    color: #005070;
+    font-style:oblique;
+    /* border-bottom: 2px solid #22725E ;
+    padding: 15px;
+    border-bottom-width: 5px; */
+    margin-top: 10px;
+}
+#sign{
+    width: 35%;
+    color:#BA9B7A ;
+    padding: 5px;
+    background-color: #005070 ;
+    font-size: 17px;
+}
