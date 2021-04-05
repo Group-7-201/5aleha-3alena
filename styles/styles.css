@@ -44,21 +44,13 @@ img {vertical-align: middle;}
     right: 620px;
     font-weight: bold;
     color: rgb(255 255 255);
+	/* letter-spacing: .5rem; */
     background-color: #005070;
     border: 0px solid #005070;
 	
 }
 .btnExplore:hover{
 	background-color: #D41C1E;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -79,18 +71,18 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 2.5s;
+  -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 2.5s;
+  animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .85} 
-  to {opacity: 1}
+  from { opacity: .5} 
+  to { opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .85} 
+  from {opacity: .93} 
   to {opacity: 1}
 }
 
@@ -112,10 +104,29 @@ img {vertical-align: middle;}
 
 
 #About-Us p{
+	font-size: 20px;
 	padding: 0px 300px 0px 300px;
 	color: #70695F;
     line-height: 25px;
 	text-align: center;
+}
+#team{
+	padding-top: 60px;
+}
+#team p{
+	text-align: center;
+	font-size: 15px;
+	color:#005070;
+	letter-spacing: 1rem;
+	padding: 20px;
+}
+
+#team h3{
+	text-align: center;
+	font-size: 30px;
+	color:#005070;
+	letter-spacing: .5rem;
+	font-weight: bold;
 }
 
   
@@ -202,6 +213,7 @@ img {vertical-align: middle;}
     padding: 20px;
 	color: #70695F;
     line-height: 25px;
+	font-size: 20px;
 }
 
 /* h3{
@@ -220,16 +232,7 @@ img {vertical-align: middle;}
     
 
 }
-/* .image:after {
-    content:'\A';
-    position:absolute;
-    width:100%; height:100%;
-    top:0; left:0;
-    background: rgba(49 23 1);
-    opacity:0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-} */
+
 
 header #navbar, #left-nav , ul{
     clear: both;
@@ -243,10 +246,13 @@ header #navbar, #left-nav , ul{
     box-shadow: 0 4px 10px 0 rgb(0 0 0 / 75%);
     position: fixed;
     top: 0;
+	height: 70px;
+
     z-index: 1;
 }
 #left-nav img{
 	padding-left: 20px;
+	padding-top: 6px;
 }
 
 #social-media i{
@@ -257,8 +263,8 @@ header #navbar, #left-nav , ul{
 }
 #left-nav ul{
 	position: absolute;
-    top: 15px;
-    left: 800px;
+    top: 29px;
+    left: 830px;
 }
 
 #left-nav ul li a{
@@ -292,6 +298,7 @@ header ul li{
 }
 
 footer{
+	padding-top: 90px;
     width: 100%;
     text-align: center;
 }
@@ -314,11 +321,12 @@ footer ul li{
     padding-left: 60px;
     padding-top: 150px;
 	padding-bottom: 50px;
-    font-size: 30px;
     text-align: center;
-    letter-spacing:0.1em;
-	color: #005070;
-	font-weight: bolder;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #005070;
+    letter-spacing: 0.1em;
+	font-family: 'Caladea', serif;
 }
 #slider-body {
     clear: both;
@@ -531,80 +539,31 @@ footer ul li{
 
 /* --- Images-top-rated---*/
 
-.container-heading h2 {
-	padding-top: 60px;
-    letter-spacing:0.1em;
-	font-weight: bolder; 
-    color:#005070;
+#container-heading h2{
 	font-size: 30px;
+	font-weight: bolder;
 	text-align: center;
+    padding-top: 90px;
+	color:#005070;
+	letter-spacing:0.1em;
 }
+#top-rated {
+	padding-top: 60px;
+	box-sizing: border-box;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+	float: left;
+	width: 25%;
+	height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
 
-
-  /* #top-rated *,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}  */
-
-/* html {
-  font-size: 62.5%;
-}  */
-
-	/* #top-rated {
-	--background-color: hsl(180, 20%, 90%);
-	
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-	min-height: 100vh;
-	padding: 2rem;
-
-	color: hsla(0, 0%, 0%, .6);
-	background: var(--background-color);
-	text-align: center;
-	margin-top: 60px;
-	}
-
-
-
-	.main {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	}
-
-	.wrap {
-	margin: 2rem;
-
-	transform-style: preserve-3d;
-	transform: perspective(100rem);
-	cursor: pointer;
-	} 
-
-	.ctr {
-	--rX: 0;
-	--rY: 0;
-	--bX: 50%;
-	--bY: 80%;
-	width: 20rem;
-	height: 20rem;
-	border: 1px solid var(--background-color);
-	border-radius: 1.6rem;
-	padding: 4rem;
-
-	display: flex;
-	align-items: flex-end;
-
-	position: relative;
-	transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
-
-	background: linear-gradient(hsla(0, 0%, 100%, .1), hsla(0, 0%, 100%, .1)), url("https://images.unsplash.com/photo-1559113513-d5e09c78b9dd?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9");
-	background-position: var(--bX) var(--bY);
-	background-size: 40rem auto;
-	box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, .2);
-
-	transition: transform .6s 1s;
-	}  */
+/* --- End of Images-top-rated---*/
