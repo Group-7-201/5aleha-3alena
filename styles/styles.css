@@ -1,7 +1,6 @@
 
-body{
-    font-family: 'Ubuntu', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif
+* {
+	font-family: 'Caladea', serif;
 }
 #clear{
     clear: both;
@@ -25,8 +24,9 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-	color: rgb(216 216 216);
-    font-size: 50px;
+	color: rgb(255 255 255);
+    font-size: 40px;
+	font-weight: bold;
     padding: 180px 0px 0px 0px;
     position: absolute;
     bottom: 0px;
@@ -35,6 +35,21 @@ img {vertical-align: middle;}
     background-color: rgba(0, 0, 0, 0.52);
     height: 392px;
     text-align: center;
+	font-family: 'Caladea', serif;
+}
+.btnExplore{
+	padding: 20px 40px 20px 40px;
+    position: absolute;
+    bottom: 121px;
+    right: 620px;
+    font-weight: bold;
+    color: rgb(255 255 255);
+    background-color: #005070;
+    border: 0px solid #005070;
+	
+}
+.btnExplore:hover{
+	background-color: #D41C1E;
 }
 
 /* Number text (1/3 etc) */
@@ -223,12 +238,12 @@ header #navbar, #left-nav , ul{
 
 
 #navbar{
-    width: 100%;
-    background-color: rgb(255 255 255 / 62%);
-	box-shadow: 0 4px 10px 0 rgb(0 0 0 / 75%);
-	position: fixed;
+	width: 100%;
+    background-color: #70695f69;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 75%);
+    position: fixed;
     top: 0;
-	z-index: 1;
+    z-index: 1;
 }
 #left-nav img{
 	padding-left: 20px;
@@ -243,20 +258,21 @@ header #navbar, #left-nav , ul{
 #left-nav ul{
 	position: absolute;
     top: 15px;
-    left: 405px;
+    left: 800px;
 }
 
 #left-nav ul li a{
-	padding-right: 50px;
-    color: #005070;
+	padding-right: 35px;
+    color: #f0fbff;
     font-size: 20px;
     text-decoration: none;
+	font-family: 'Caladea', serif;
 }
 #left-nav ul li a:hover{
-	color: #22725E;
+	color:  #0089BB;
 }
 #left-nav ul li a:active{
-	color: #94442b;
+	color: #005070;
 }
 
 
