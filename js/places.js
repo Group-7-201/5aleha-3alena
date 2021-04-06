@@ -47,15 +47,15 @@ function placesRender(){
     div1El.id=`${idArray[i]}`;
     let button1 = document.createElement('button');
     div1El.appendChild(button1);
-    button1.textContent = '';
+    button1.textContent = 'Like';
     button1.className='button1';
     button1.id=`${idArray[i]}`;
     let div2El=document.createElement('div');
     divEl.appendChild(div2El);
-    div2El.id='dislike-section';
+    div2El.id=`${idArray[i]}`;
     let button2 = document.createElement('button');
     div2El.appendChild(button2);
-    button2.textContent = '';
+    button2.textContent = ' Unlike';
     button2.className='button2';
     button2.id=`${idArray[i]}`;
   }
