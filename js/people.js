@@ -47,19 +47,43 @@ function peopleRender(){
     let divEl=document.createElement('div');
     peopleSection.appendChild(divEl);
     divEl.id='peopleInfo';
-    let item1=document.createElement('img');
-    divEl.appendChild(item1);
-    item1.src=People.all[i].path;
-    item1.alt=People.all[i].name;
-    let titleEl=document.createElement('h3');
-    divEl.appendChild(titleEl);
-    titleEl.textContent=People.all[i].peopleName;
-    let par1El=document.createElement('p');
-    titleEl.appendChild(par1El);
-    par1El.textContent=People.all[i].peopleAdress;
-    let par2El=document.createElement('p');
-    titleEl.appendChild(par2El);
-    par2El.textContent=People.all[i].peoplePhoneNumber;
+    let img=document.createElement('img');
+    divEl.appendChild(img);
+    img.src=People.all[i].path;
+    img.alt=People.all[i].name;
+
+    let h3=document.createElement('h3');
+    divEl.appendChild(h3);
+    h3.textContent=`${People.all[i].peopleName}`;
+    
+
+    let h2=document.createElement('h2');
+    let p=document.createElement('p');
+    let i2El=document.createElement('i');
+    let span2El=document.createElement('span');
+    h3.appendChild(p);
+
+
+    let addressIcon=document.createElement('i');
+    let addressText=document.createElement('span');
+    addressIcon.classList.add('fa');
+    addressIcon.classList.add('fa-map-marker');
+    addressText.textContent=People.all[i].peopleAdress;
+    h2.appendChild(addressText);
+
+
+    h2.appendChild(addressIcon);
+    h2.appendChild(addressText) ;
+    i2El.classList.add('fa');
+    i2El.classList.add('fa-phone');
+
+    
+    span2El.textContent=People.all[i].peoplePhoneNumber;
+    p.appendChild(i2El);
+    h3.appendChild(h2);
+    p.appendChild(span2El);
+
+    
   }
 }
 peopleRender();
