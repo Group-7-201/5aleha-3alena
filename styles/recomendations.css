@@ -2,19 +2,35 @@
 #places {
   margin-top: 100px;
 }
-/* 
+
 #first-header{
   position: relative;
-  bottom: 6500px;
-  left: 550px;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
   margin-top: 50px;
-} */
+  color: #005070;
+}
+
+#main-prgh{
+  width: 50%;
+  text-align: center;
+  font-size: 25px;
+  line-height: 1.6;
+  margin-left: 338px;
+  margin-top: 30px;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+
+
+}
 
 #places img {
   display: block;
 	width: 700px;
 	height:500px;
-  margin-left: 400px;
+  margin-left: 450px;
   margin-right: auto;
   border:  solid #00000057 2px;
   box-shadow: 3px 3px 6px #0000006b;
@@ -30,6 +46,8 @@
     bottom: 500px;
     margin-left: 90px;
     font-family: 'EB Garamond', serif;
+    color: #005070;
+
 
 }
 
@@ -40,184 +58,32 @@
 }
 
 #places p{
-    font-size: 17px;
-    width: 20%;
+    font-size: 19px;
+    width: 22%;
     margin-top: 30px;
     line-height: 1.6;
+    color: black;
    }
-
-#places #alaray spool >img {
-   position: relative;
-
-}
-#places #alaray spool >h3 {
-    float: right;
- 
- } 
-
 
  footer {
 	clear: both;
 }
 
-$('.rating input').change{
-  function() {
-    $('#choice').text(this.value + ' stars');
-  }
-)
-.rating {
-  float: left;
-  border: none;
-}
-.rating:not(:checked) > input {
-  position: absolute;
-  top: -9999px;
-  clip: rect(0, 0, 0, 0);
-}
-.rating:not(:checked) > label {
-  float: right;
-  width: 1em;
-  padding: 0 .1em;
-  overflow: hidden;
-  white-space: nowrap;
-  cursor: pointer;
-  font-size: 200%;
-  line-height: 1.2;
-  color: #ddd;
-}
-
- @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-/*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-} */ 
-/* html,body{
-  display: grid;
-  height: 100%;
-  place-items: center;
- text-align: center;
-  background: #000;
-} */
-.container{
+.button1{
+  width: 250px;
+  height: 60px;
   position: relative;
-  width: 350px;
-  background: rgb(233, 229, 229);
-  padding: 10px 30px 40px -10px;
-  border: 1px solid  rgb(233, 229, 229);
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 0px;
+  left: 40px;
+  bottom: 250px;
+  background-image: url(/images/like.jpg);
 }
-.container .post{
-  display: none;
-}
-.container .text{
-  font-size: 25px;
-  color: #666;
-  font-weight: 500;
-}
-.container .edit{
-  position: absolute;
-  right: 10px;
-  top: 5px;
-  font-size: 16px;
-  color: #666;
-  font-weight: 500;
-  cursor: pointer;
-}
-.container .edit:hover{
-  text-decoration: underline;
-}
-.container .star-widget input{
-  display: none;
-}
-.star-widget label{
-  font-size: 40px;
-  color: #444;
-  padding: 10px;
-  float: right;
-  transition: all 0.2s ease;
-}
-input:not(:checked) ~ label:hover,
-input:not(:checked) ~ label:hover ~ label{
-  color: #fd4;
-}
-input:checked ~ label{
-  color: #fd4;
-}
-input#rate-5:checked ~ label{
-  color: #fe7;
-  text-shadow: 0 0 20px rgb(150, 120, 97);
-}
-#rate-1:checked ~ form header:before{
-  content: "I just hate it 😠";
-}
-#rate-2:checked ~ form header:before{
-  content: "I don't like it 😒";
-}
-#rate-3:checked ~ form header:before{
-  content: "It is awesome 😄";
-}
-#rate-4:checked ~ form header:before{
-  content: "I just like it 😎";
-}
-#rate-5:checked ~ form header:before{
-  content: "I just love it 😍";
-}
-.container form{
-  display: none;
-}
-input:checked ~ form{
-  display: block;
-}
-form header{
-  width: 100%;
-  font-size: 25px;
-  color: hsla(53, 25%, 54%, 0.801);
-  font-weight: 500;
-  margin: 5px 0 20px 0;
-  text-align: center;
-  transition: all 0.2s ease;
-}
-form .textarea{
-  height: 100px;
-  width: 100%;
-  overflow: hidden;
-}
-form .textarea textarea{
-  height: 100%;
-  width: 100%;
-  outline: none;
-  color: #eee;
-  border: 1px solid #333;
-  background: #222;
-  padding: 10px;
-  font-size: 17px;
-  resize: none;
-}
-.textarea textarea:focus{
-  border-color: #444;
-}
-form .btn{
-  height: 45px;
-  width: 100%;
-  margin: 15px 0;
-}
-form .btn button{
-  height: 100%;
-  width: 100%;
-  border: 1px solid #444;
-  outline: none;
-  background:  rgb(53, 49, 49);
-  color: #999;
-  font-size: 17px;
-  font-weight: 500;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.3s ease;
 
+.button2{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  left: 800px;
+  bottom: 310px;
+  background-image: url(/images/dislike.jpg);
+
+}

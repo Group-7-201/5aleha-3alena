@@ -23,17 +23,17 @@ let paragraphArray= [
   'Umm Qais is a historical and natural sight located in the north of Jordan, known for its ancient ruins of Gadara. Umm Qais has optimal weather and spreading natural landscapes almost all year long.'
 ];
 
+let idArray =['alaraysPool', 'jordanRiver', 'kingtalalDom', 'wadiHidan', 'wadiMujib', 'wadiRum', 'deadSea','maenHot','TempleArtemis','TempleHercules','TreasuryPetra','UmmQais'];
 
 function placesRender(){
   for (let i=0; i<Places.all.length; i++){
-    // let divEl=document.getElementById('');
     let divEl=document.createElement('div');
     placesSection.appendChild(divEl);
+    divEl.id='placeInfo';
     let item1=document.createElement('img');
     divEl.appendChild(item1);
     item1.src=Places.all[i].path;
     item1.alt=Places.all[i].name;
-    item1.id=`${Places.all[i].name}`;
     let titleEl=document.createElement('h3');
     divEl.appendChild(titleEl);
     titleEl.textContent=`${Places.all[i].name}`;
@@ -41,83 +41,37 @@ function placesRender(){
     let parEl=document.createElement('p');
     titleEl.appendChild(parEl);
     parEl.textContent=`${paragraphArray[i]}`;
-    rating();
+    // rating();
+    let div1El=document.createElement('div');
+    divEl.appendChild(div1El);
+    div1El.id=`${idArray[i]}`;
+    let button1 = document.createElement('button');
+    div1El.appendChild(button1);
+    button1.textContent = '';
+    button1.className='button1';
+    button1.id=`${idArray[i]}`;
+    let div2El=document.createElement('div');
+    divEl.appendChild(div2El);
+    div2El.id='dislike-section';
+    let button2 = document.createElement('button');
+    div2El.appendChild(button2);
+    button2.textContent = '';
+    button2.className='button2';
+    button2.id=`${idArray[i]}`;
   }
 }
 placesRender();
-
-Places.prototype.rating = function(){
-  
-//   <div class="center">
-//   <div class="stars">
-//     <input type="radio" id="five" name="rate" value="5">
-//     <label for="five"></label>
-//     <input type="radio" id="four" name="rate" value="4">
-//     <label for="four"></label>
-//     <input type="radio" id="three" name="rate" value="3">
-//     <label for="three"></label>
-//     <input type="radio" id="two" name="rate" value="2">
-//     <label for="two"></label>
-//     <input type="radio" id="one" name="rate" value="1">
-//     <label for="one"></label>
-//     <span class="result"></span>
-//   </div>
-// </div>
-
-  let div1El=document.createElement('div');
-  placesSection.appendChild(div1El);
-  div1El.className='center';
-
-  let div2El=document.createElement('div');
-  div1El.appendChild(div2El);
-  div2El.className='post';
-  let div3El=document.createElement('div');
-  div1El.appendChild(div3El);
-  // div3El.className='text';
-  // div3El.textContent='Thanks for rating us!';
-
-  let div4El=document.createElement('div');
-  div1El.appendChild(div4El);
-  div4El.className='edit';
-  div4El.textContent='EDIT';
-  let div5El=document.createElement('div');
-  div1El.appendChild(div5El);
-  div5El.className='star-widget';
-  for (let i=5; i>0; i--){
-    let inputEl=document.createElement('input');
-    div5El.appendChild(inputEl);
-    inputEl.type='radio';
-    inputEl.name='rate';
-    inputEl.id=`rate-${i}`;
-    let labelEl= document.createElement('label');
-    div5El.appendChild(labelEl);
-    labelEl.for=`rate-${i}`;
-    labelEl.className='fas fa-star';
+for (let i=0; i<Places.all.length; i++){
+  let placeId= document.getElementById(`${idArray[i]}`);
+  placeId.addEventListener('click',handelClick);
+  function handelClick (event){
+    event.preventDefault();
+    if (event.target.id !== placeId){
+      if (event.target.id === idArray[i] )
+      {
+        Places.all[i].placeRate++;
+      }
+    store();
+    }
   }
-  let formEl=document.createElement('form');
-  div5El.appendChild(formEl);
-  formEl.action='#';
-  let headerEl=document.createElement('header');
-  div5El.appendChild(headerEl);
-  let div6El=document.createElement('div');
-  div5El.appendChild(div6El);
-  div6El.className='textarea';
-  let brAtt= document.createElement('br');
-  div5El.appendChild(brAtt);
-  let div7El=document.createElement('div');
-  div5El.appendChild(div7El);
-  div7El.className='btn';
-  let buttonEl=document.createElement('button');
-  div7El.appendChild(buttonEl);
-  buttonEl.type='submit';
-  buttonEl.textContent='Post';
-  let div8El = document.createElement('div');
-  div5El.appendChild(div8El);
-  div8El.id='star';
 }
-
-
-
-
-
-

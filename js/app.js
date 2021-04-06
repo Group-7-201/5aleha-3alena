@@ -15,7 +15,10 @@ function Places(name, info) {
   this.path = `./images/${name}.jpg`;
   this.placeInf = info;
   this.placeRate = 0;
+<<<<<<< HEAD
   this.rate = 0;
+=======
+>>>>>>> 9ad1fdc7f1c21e4ccdbc74e9d4d3b74c4768e13d
   reStore();
   if (reStoreValue === null) {
     Places.all.push(this);
@@ -37,7 +40,11 @@ let place9 = new Places(placesName[8], 'Ruins of the legendary and iconic Temple
 let place10 = new Places(placesName[9], 'Dating back to the time of the erection of the Roman Theater, the Temple of Hercules is located at the top hill of the glorious Citadel of Amman, and is also visible from downtown.');
 let place11 = new Places(placesName[10], 'Surprisingly, the rose-city has much more to offer, and tribute must be paid to Petra‘s most iconic monument, Al-Khazheh or the Treasury. This signature jaw-dropping sight will meet you the moment you finish walking through the 1200-meter Al-Siq.');
 let place12 = new Places(placesName[11], 'Umm Qais is a historical and natural sight located in the north of Jordan, known for its ancient ruins of Gadara. Umm Qais has optimal weather and spreading natural landscapes almost all year long.');
+<<<<<<< HEAD
 Places.all.push = [place1, place2, place3, place3, place4, place5, place6, place7, place8, place9, place10, place11, place12];
+=======
+Places.all.push = [place1, place2, place3, place4, place5, place6, place7, place8, place9, place10, place11,place12];
+>>>>>>> 9ad1fdc7f1c21e4ccdbc74e9d4d3b74c4768e13d
 
 // Store Function in Local Storage:
 function store() {
@@ -92,6 +99,7 @@ function reStore() {
 //   }
 // }
 // render();
+<<<<<<< HEAD
 
 let placesSection = document.getElementById('places');
 
@@ -233,3 +241,5 @@ Places.prototype.rating = function () {
 };
 
 
+=======
+>>>>>>> 9ad1fdc7f1c21e4ccdbc74e9d4d3b74c4768e13d
