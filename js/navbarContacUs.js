@@ -5,7 +5,7 @@ window.onscroll = function () {
 
   let top = window.scrollY;
   console.log(top);
-  if (top >= 100) {
+  if (top > 1) {
     header.classList.add('active');
   }
   else {

@@ -3,12 +3,12 @@
 
 let placesSection = document.getElementById('places');
 
-let normalPlaces=JSON.parse(localStorage.getItem('places')) || [];
+let normalPlaces = JSON.parse(localStorage.getItem('places')) || [];
 
-for (let i=0; i<normalPlaces.length; i++){
-  let placesObj=new Places (normalPlaces[i].name,normalPlaces[i].placeInfo);
+for (let i = 0; i < normalPlaces.length; i++) {
+  let placesObj = new Places(normalPlaces[i].name, normalPlaces[i].placeInfo);
 }
-let paragraphArray= [
+let paragraphArray = [
   'This is the blessing of the most beautiful ponds in Jordanas it exists between themountain range is located in the village king composed scene aesthetically pleasing in thespring, his pool host sraretypes of animals and birds, such as: otter,fish owl,river and water turtles It is one of the rare and endangered species',
   'Stand beside the Jordan River where it’s thought Jesus was baptized on this private 4-hour trip from Amman. Travel to the ‘Bethany Beyond the Jordan’ baptism site, also known as El-Maghtas, and tour the riverbanks and ruins of ancient churches, wells, and baptismal pools.',
   'The dam is 92 meters high, which make the flood control system look like a pretty nice ski jump, the lake can contain 90 millions of water cubic meters',
@@ -23,23 +23,26 @@ let paragraphArray= [
   'Umm Qais is a historical and natural sight located in the north of Jordan, known for its ancient ruins of Gadara. Umm Qais has optimal weather and spreading natural landscapes almost all year long.'
 ];
 
-let idArray =['alaraysPool', 'jordanRiver', 'kingtalalDom', 'wadiHidan', 'wadiMujib', 'wadiRum', 'deadSea','maenHot','TempleArtemis','TempleHercules','TreasuryPetra','UmmQais'];
+let idArray = ['alaraysPool', 'jordanRiver', 'kingtalalDom', 'wadiHidan', 'wadiMujib', 'wadiRum', 'deadSea', 'maenHot', 'TempleArtemis', 'TempleHercules', 'TreasuryPetra', 'UmmQais'];
 
-function placesRender(){
-  for (let i=0; i<Places.all.length; i++){
-    let divEl=document.createElement('div');
+function placesRender() {
+  for (let i = 0; i < Places.all.length; i++) {
+    let divEl = document.createElement('div');
     placesSection.appendChild(divEl);
+
     divEl.id=`${idArray[i]}`;
     let item1=document.createElement('img');
+
     divEl.appendChild(item1);
-    item1.src=Places.all[i].path;
-    item1.alt=Places.all[i].name;
-    let titleEl=document.createElement('h3');
+    item1.src = Places.all[i].path;
+    item1.alt = Places.all[i].name;
+    let titleEl = document.createElement('h3');
     divEl.appendChild(titleEl);
-    titleEl.textContent=`${Places.all[i].name}`;
-    titleEl.id=`${Places.all[i].name}`;
-    let parEl=document.createElement('p');
+    titleEl.textContent = `${Places.all[i].name}`;
+    titleEl.id = `${Places.all[i].name}`;
+    let parEl = document.createElement('p');
     titleEl.appendChild(parEl);
+
     parEl.textContent=`${paragraphArray[i]}`;
     parEl.className='place-paragraph';
     parEl.id= 'prgh';
@@ -48,29 +51,31 @@ function placesRender(){
     par2El.textContent=`* Total Rate :  ${Places.all[i].placeRate}`;
     par2El.id = 'prgh2';
 
-    let div1El=document.createElement('div');
+
+    let div1El = document.createElement('div');
     divEl.appendChild(div1El);
-    div1El.id=`${idArray[i]}`;
+    div1El.id = `${idArray[i]}`;
     let button1 = document.createElement('button');
     div1El.appendChild(button1);
     button1.textContent = 'Like';
-    button1.className='button1';
-    button1.id=`${idArray[i]}`;
+    button1.className = 'button1';
+    button1.id = `${idArray[i]}`;
   }
 }
 placesRender();
-for (let i=0; i<Places.all.length; i++){
-  let placeId= document.getElementById(`${idArray[i]}`);
-  placeId.addEventListener('click',handelClick);
-  function handelClick (event){
+for (let i = 0; i < Places.all.length; i++) {
+  let placeId = document.getElementById(`${idArray[i]}`);
+  placeId.addEventListener('click', handelClick);
+  function handelClick(event) {
     event.preventDefault();
-    if (event.target.id !== placeId){
-      if (event.target.id === idArray[i] )
-      {
+    if (event.target.id !== placeId) {
+      if (event.target.id === idArray[i]) {
         Places.all[i].placeRate++;
       }
+
     store();
     location.reload();
+
     }
   }
 }
