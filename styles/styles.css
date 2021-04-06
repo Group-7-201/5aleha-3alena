@@ -339,6 +339,9 @@ footer ul li{
     display: inline-block;
 	margin: 60px;
 }
+#left-nav ul li a:active {
+	color: #005070;
+  }
 
 /* --- Testimonials --- */
 
