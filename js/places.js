@@ -41,7 +41,12 @@ function placesRender(){
     let parEl=document.createElement('p');
     titleEl.appendChild(parEl);
     parEl.textContent=`${paragraphArray[i]}`;
-    // rating();
+    parEl.className='place-paragraph';
+    // parEl.id=`${idArray[i]}`;
+    let par2El=document.createElement('p');
+    titleEl.appendChild(par2El);
+    par2El.textContent=`* Total Rate :  ${Places.all[i].placeRate}`;
+
     let div1El=document.createElement('div');
     divEl.appendChild(div1El);
     div1El.id=`${idArray[i]}`;
@@ -50,14 +55,6 @@ function placesRender(){
     button1.textContent = 'Like';
     button1.className='button1';
     button1.id=`${idArray[i]}`;
-    let div2El=document.createElement('div');
-    divEl.appendChild(div2El);
-    div2El.id=`${idArray[i]}`;
-    let button2 = document.createElement('button');
-    div2El.appendChild(button2);
-    button2.textContent = ' Unlike';
-    button2.className='button2';
-    button2.id=`${idArray[i]}`;
   }
 }
 placesRender();

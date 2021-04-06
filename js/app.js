@@ -54,28 +54,28 @@ function reStore() {
   }
 }
 
-// // Render Function:
+// Render Function:
 
-// //  first: create an array for Object Rates:
-// const rateArray =[];
-// for (let i=0; i<Places.all.length; i++)
-// {
-//   rateArray.push(Places.all[i].placeRate);
-// }
+//  first: create an array for Object Rates:
+const rateArray =[];
+for (let i=0; i<Places.all.length; i++)
+{
+  rateArray.push(Places.all[i].placeRate);
+}
 
-// // largest rate (6) places Function:
-// let largestRateArray=findMaxRate(rateArray,6);
-// function findMaxRate(input, count) {
-//   let output = [];
-//   for (let i = 0; i < input.length; i++) {
-//     output.push(i); // add index to output array
-//     if (output.length > count) {
-//       output.sort(function(a, b) { return input[b] - input[a]; }); // descending sort the output array
-//       output.pop(); // remove the last index (index of smallest element in output array)
-//     }
-//   }
-//   return output;
-// }
+// largest rate (6) places Function:
+let largestRateArray=findMaxRate(rateArray,5);
+function findMaxRate(input, count) {
+  let output = [];
+  for (let i = 0; i < input.length; i++) {
+    output.push(i); // add index to output array
+    if (output.length > count) {
+      output.sort(function(a, b) { return input[b] - input[a]; }); // descending sort the output array
+      output.pop(); // remove the last index (index of smallest element in output array)
+    }
+  }
+  return output;
+}
 
 // function render(){
 // let largestRateImages= document.getElementById('item');
