@@ -1,6 +1,6 @@
 
 #people img {
-    display: block;
+    display: flex;
       width: 700px;
       height:500px;
     margin-left: 450px;
@@ -23,15 +23,26 @@
   
   
   }
-  #first-header{
-    position: relative;
+  #first-header,.first-header{
+
+    text-align: center;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
     font-family: 'EB Garamond', serif;
     font-weight: bold;
     font-size: 50px;
-    text-align: center;
     margin-top: 50px;
-    color: #005070;
+    color: white;
     margin-bottom: 30px;
+  }
+  .first-header,image{
+    /* border-radius: 5px; */
+    height: 400px;
+    width: 1550px;
+    background-image: url(../images/vibrant-night-sky-with-stars-nebula-galaxy.jpg);
+    background-attachment:fixed ;
   }
 #people p{
     font-size: 19px;
