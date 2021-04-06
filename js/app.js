@@ -76,18 +76,32 @@ function findMaxRate(input, count) {
   }
   return output;
 }
+let idArray2 =['alaraysPool', 'jordanRiver', 'kingtalalDom', 'wadiHidan', 'wadiMujib', 'wadiRum', 'deadSea','maenHot','TempleArtemis','TempleHercules','TreasuryPetra','UmmQais'];
+function render(){
+  let largestRateImages= document.getElementById('top-rated-container');
+  for (let i=0; i<largestRateArray.length; i++){
+    const divEl=document.createElement('div');
+    largestRateImages.appendChild(divEl);
+    divEl.setAttribute('class','img__wrap');
+    const imageEl = document.createElement ('img');
+    divEl.appendChild(imageEl);
+    imageEl.setAttribute('class','img__img');
+    imageEl.setAttribute('width','100%');
+    imageEl.setAttribute('height','100%');
+    imageEl.src=Places.all[largestRateArray[i]].path;
+    imageEl.alt=Places.all[largestRateArray[i]].name;
+    const paragraph = document.createElement ('p');
+    divEl.appendChild(paragraph);
+    paragraph.setAttribute('class','img__description');
+    let aTag=document.createElement('a');
+    paragraph.appendChild(aTag);
+    aTag.textContent=(`${Places.all[largestRateArray[i]].name}`);
+    aTag.setAttribute('href',`./Recomendations.html`);
+    const paragraph1 = document.createElement ('p');
+    divEl.appendChild(paragraph1);
+    paragraph1.setAttribute('class','Rate');
+    paragraph1.textContent=`* The Total Rate :  ${Places.all[largestRateArray[i]].placeRate}`;
 
-// function render(){
-// let largestRateImages= document.getElementById('item');
-//   for (let i=0; i<6; i++){
-//     const imageEl = document.createElement ('img');
-//     largestRateImages.appendChild(imageEl);
-//     imageEl.src=Places.all[largestRateArray[i]].path;
-//     imageEl.alt=Places.all[largestRateArray[i]].name;
-//     const paragraph = document.createElement ('p');
-//     largestRateImages.appendChild(paragraph);
-//     paragraph.textContent=(`${Places.all[largestRateArray[i]].name}`);
-
-//   }
-// }
-// render();
+  }
+}
+render();
