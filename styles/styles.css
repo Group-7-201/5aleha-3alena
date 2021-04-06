@@ -588,7 +588,7 @@ footer ul li{
     width: 257px;
     display: inline-block;
     margin-left: 8px;
-    box-shadow: 0px 0px 7px 3px;
+    box-shadow: 0px 6px 8px 0px;
     color: #005070;
   }
   .img__description a{
