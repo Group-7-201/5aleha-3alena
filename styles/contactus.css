@@ -113,11 +113,21 @@ header #header-container, #navbar, #left-nav, ul {
 #navbar {
   width: 100%;
   height: 69px;
-  background-color: #000000b3;
+  background-color: #00000000;
   /* box-shadow: 0 4px 10px 0 rgb(0 0 0 / 75%); */
   position: fixed;
   top: 0;
   z-index: 1;
+}
+#navbar.active {
+  width: 100%;
+  height: 69px;
+  background-color: black;
+  /* box-shadow: 0 4px 10px 0 rgb(0 0 0 / 75%); */
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  /* transition: all 0.5ms; */
 }
 
 #left-nav img {
@@ -129,18 +139,18 @@ header #header-container, #navbar, #left-nav, ul {
 #left-nav ul {
   position: absolute;
   top: 15px;
-  left: 800px;
+  left: 670px;
 }
 
 #left-nav ul li a {
-  padding-right: 35px;
+  padding-right: 37px;;
   position: relative;
   color: #f0fbff;
   font-size: 20px;
   text-decoration: none;
   font-family: 'Caladea', serif;
-  right: 72px;
-  top: 10px
+  right: 50;
+  top: 14px
 }
 
 #left-nav ul li a:hover {
@@ -164,9 +174,7 @@ img {
 
 /* main */
 
-.backgroundColor{
-  
-}
+
 .content h2 ,.content p{
   color: rgb(255 255 255);
   font-size: 40px;
@@ -250,17 +258,19 @@ h2 {
   display: flex;
   flex-direction: column;
 }
+.container .contactInfo .box h3 ,p{
+  font-size: 20px;
+}
 
 .container .contactInfo .box {
   position: relative;
-  padding: 20px 0;
+  padding: 20px 0 40px;
   display: flex;
   padding-top: 20px;
+  bottom: 0px;
 }
 
-.icon:nth-last-of-type(2) {
-  margin-bottom: 50px;
-}
+
 
 .container .contactInfo .box .icon {
   min-width: 60px;
