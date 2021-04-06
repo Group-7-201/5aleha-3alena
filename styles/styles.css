@@ -42,7 +42,8 @@ img {vertical-align: middle;}
     position: absolute;
     bottom: 121px;
     right: 620px;
-    font-weight: bold;
+	font-size: 18px;
+    /* font-weight: bold; */
     color: rgb(255 255 255);
 	/* letter-spacing: .5rem; */
     background-color: #005070;
@@ -50,7 +51,7 @@ img {vertical-align: middle;}
 	
 }
 .btnExplore:hover{
-	background-color: #D41C1E;
+	background-color: #0a0441;
 }
 
 /* The dots/bullets/indicators */
@@ -261,6 +262,16 @@ header #navbar, #left-nav , ul{
     z-index: 1;
 }
 
+.navbar-scroll{
+	width: 100%;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    z-index: 1;
+    background: #000	;
+    box-shadow: 1px 4px 6px 2px;
+}
+
 /* #left-nav { background-color:#000; }
 .nav-transparent { background-color:transparent;} */
 
@@ -278,7 +289,7 @@ header #navbar, #left-nav , ul{
 #left-nav ul{
 	position: absolute;
     top: 29px;
-    left: 830px;
+    left: 748px;
 }
 
 #left-nav ul li a{
@@ -315,6 +326,7 @@ footer{
 	padding-top: 90px;
     width: 100%;
     text-align: center;
+	font-family: 'Caladea', serif;
 }
 #footer-container{
 	background-color: #005070;
@@ -366,6 +378,8 @@ footer ul li{
 	min-height: 350px;
 	perspective: 1000px;
 	overflow: hidden;
+	font-family: 'Caladea', serif;
+	line-height: 1.6;
 }
 .testimonials .item {
 	top: 20;
@@ -375,7 +389,7 @@ footer ul li{
 	background: linear-gradient(90deg, rgba(0, 80, 112, 0.952) 3%, rgba(34, 114, 94, 0.979) 88%);
 	padding: 30px;
 	width: 650px;
-	height: 280px;
+	height: 315px;
 	text-align: center;
 	transition: transform 0.4s;
 	-webkit-transform-style: preserve-3d;
@@ -392,7 +406,7 @@ footer ul li{
 	color: #ddd;
 }
 .testimonials .item h2 {
-	font-size: 14px;
+	font-size: 20px;
 }
 .dots {
 	display: flex;
