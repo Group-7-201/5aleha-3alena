@@ -23,16 +23,17 @@ let paragraphArray= [
   'Umm Qais is a historical and natural sight located in the north of Jordan, known for its ancient ruins of Gadara. Umm Qais has optimal weather and spreading natural landscapes almost all year long.'
 ];
 
+let idArray =['alaraysPool', 'jordanRiver', 'kingtalalDom', 'wadiHidan', 'wadiMujib', 'wadiRum', 'deadSea','maenHot','TempleArtemis','TempleHercules','TreasuryPetra','UmmQais'];
 
 function placesRender(){
   for (let i=0; i<Places.all.length; i++){
     let divEl=document.createElement('div');
     placesSection.appendChild(divEl);
+    divEl.id='placeInfo';
     let item1=document.createElement('img');
     divEl.appendChild(item1);
     item1.src=Places.all[i].path;
     item1.alt=Places.all[i].name;
-    item1.id=`${Places.all[i].name}`;
     let titleEl=document.createElement('h3');
     divEl.appendChild(titleEl);
     titleEl.textContent=`${Places.all[i].name}`;
@@ -41,28 +42,36 @@ function placesRender(){
     titleEl.appendChild(parEl);
     parEl.textContent=`${paragraphArray[i]}`;
     // rating();
+    let div1El=document.createElement('div');
+    divEl.appendChild(div1El);
+    div1El.id=`${idArray[i]}`;
+    let button1 = document.createElement('button');
+    div1El.appendChild(button1);
+    button1.textContent = '';
+    button1.className='button1';
+    button1.id=`${idArray[i]}`;
+    let div2El=document.createElement('div');
+    divEl.appendChild(div2El);
+    div2El.id='dislike-section';
+    let button2 = document.createElement('button');
+    div2El.appendChild(button2);
+    button2.textContent = '';
+    button2.className='button2';
+    button2.id=`${idArray[i]}`;
   }
 }
 placesRender();
-
-function rating(){
-  let divEl = document.createElement('div');
-  placesSection.appendChild(divEl);
-  divEl.id='rating-section';
-  let div1El=document.createElement('div');
-  divEl.appendChild(div1El);
-  div1El.id='like-section';
-  let button1 = document.createElement('button');
-  div1El.appendChild(button1);
-  button1.textContent = '';
-  button1.setAttribute('id', 'button1');
- 
-  let div2El=document.createElement('div');
-  divEl.appendChild(div2El);
-  div2El.id='dislike-section';
-  let button2 = document.createElement('button');
-  div2El.appendChild(button2);
-  button2.textContent = '';
-  button2.setAttribute('id', 'button2');
-
+for (let i=0; i<Places.all.length; i++){
+  let placeId= document.getElementById(`${idArray[i]}`);
+  placeId.addEventListener('click',handelClick);
+  function handelClick (event){
+    event.preventDefault();
+    if (event.target.id !== placeId){
+      if (event.target.id === idArray[i] )
+      {
+        Places.all[i].placeRate++;
+      }
+    store();
+    }
+  }
 }

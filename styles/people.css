@@ -1,0 +1,46 @@
+
+#people img {
+    display: block;
+      width: 700px;
+      height:500px;
+    margin-left: 450px;
+    margin-right: auto;
+    border:  solid #00000057 2px;
+    box-shadow: 3px 3px 6px #0000006b;
+    
+  }
+  
+  
+  #people h3{
+     /* clear: both; */
+      font-size: 50px;
+      font-weight: bold;
+      position: relative;
+      bottom: 500px;
+      margin-left: 90px;
+      font-family: 'EB Garamond', serif;
+      color: #005070;
+  
+  
+  }
+  #first-header{
+    position: relative;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    color: #005070;
+    margin-bottom: 30px;
+  }
+#people p{
+    font-size: 19px;
+    width: 22%;
+    margin-top: 30px;
+    line-height: 1.6;
+    color: black;
+   }
+
+ footer {
+	clear: both;
+}
