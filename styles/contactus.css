@@ -2,6 +2,12 @@ a {
   text-decoration: none;
   color: black;
 }
+body{
+  height: 100vh;
+}
+ 
+  
+
 
 * {
   font-family: 'Caladea', serif;
@@ -92,6 +98,13 @@ header #header-container, #navbar, #left-nav, ul {
   color: #94442b;
 } */
 
+.color{
+
+  background-color: black !important;
+  
+}
+
+
 #header-container {
   width: 100%;
   overflow: hidden;
@@ -100,8 +113,8 @@ header #header-container, #navbar, #left-nav, ul {
 #navbar {
   width: 100%;
   height: 69px;
-  background-color: #70695f69;
-  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 75%);
+  background-color: #000000b3;
+  /* box-shadow: 0 4px 10px 0 rgb(0 0 0 / 75%); */
   position: fixed;
   top: 0;
   z-index: 1;
@@ -180,9 +193,21 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-attachment: fixed;
   background-image: url(../images/wp4446841.jpg);
   background-size: cover;
   /* opacity: 0.5; */
+}
+.mapouter{
+  margin-left: 40px;
+  
+}
+.map{
+  position: relative;
+  bottom: 57px;
+}
+.gmap_canvas{
+  border-radius: 25px;
 }
 
 .content+div {
@@ -199,7 +224,7 @@ h2 {
 }
 
 .contact .content h2 {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: 500;
   color: #fff;
   margin-top: 55px;
@@ -216,7 +241,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  background-color: #ffffff67;
+  background-color: #00000096;
   border-radius: 5px;
 }
 
@@ -230,6 +255,7 @@ h2 {
   position: relative;
   padding: 20px 0;
   display: flex;
+  padding-top: 20px;
 }
 
 .icon:nth-last-of-type(2) {
