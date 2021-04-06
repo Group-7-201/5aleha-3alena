@@ -26,14 +26,142 @@
 
 }
 
+#cities{
+  text-align: center;
+  margin-top: 50px;
+  font-size: 50px;
+  color: #005070;
+  margin-bottom: 50px;
+}
+
+#amman{
+  margin-left: 80px;
+  margin-right: 30px;
+  width: 20%;
+  box-shadow: 2px 2px 4px #005070;
+
+}
+#amman:hover{
+  transform: scale(1.09);
+}
+
+#amman-h{
+  margin-left: 80px;
+  font-size: 20px;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  line-height: 1.6;
+  position: relative;
+  bottom: 20px;
+}
+
+#amman-p{
+  margin-left: 80px;
+  font-size: 18px;
+  font-family: 'EB Garamond', serif;
+  position: relative; 
+  bottom: 20px;
+}
+
+
+#aqaba{
+  height: 320px;
+  margin-right: 30px;
+  width: 20%;
+  box-shadow: 2px 2px 4px #005070;
+
+}
+#aqaba:hover{
+  transform: scale(1.09);
+}
+
+#aqaba-h{
+  font-size: 20px;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  position: relative;
+  left: 390px;
+  line-height: 1.6;
+  bottom: 45px;
+
+}
+
+#aqaba-p{
+  font-size: 18px;
+  font-family: 'EB Garamond', serif;
+  position: relative;
+  left: 390px;
+  bottom: 45px;
+}
+
+#jarash{
+  height: 320px;
+  margin-right: 30px;
+  width: 20%;
+  box-shadow: 2px 2px 4px #005070;
+
+}
+
+#jarash:hover{
+  transform: scale(1.09);
+}
+
+#jerash-h{
+  font-size: 20px;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  position: relative;
+  left: 700px;
+  line-height: 1.6;
+  bottom: 93px;
+
+}
+
+#jerash-p{
+  font-size: 18px;
+  font-family: 'EB Garamond', serif;
+  position: relative;
+  left: 700px;
+  bottom: 93px;
+}
+
+
+#madaba{
+  width: 20%;
+  box-shadow: 2px 2px 4px #005070;
+
+}
+
+#madaba:hover{
+  transform: scale(1.09);
+}
+
+#madaba-h{
+  font-size: 20px;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  position: relative;
+  left: 1000px;
+  line-height: 1.6;
+  bottom: 170px;
+
+}
+
+#madaba-p{
+  font-size: 18px;
+  font-family: 'EB Garamond', serif;
+  position: relative;
+  left: 1000px;
+  bottom: 170px;
+}
+
 #places img {
   display: block;
 	width: 700px;
 	height:500px;
-  margin-left: 450px;
+  margin-left: auto;
   margin-right: auto;
-  border:  solid #00000057 2px;
-  box-shadow: 3px 3px 6px #0000006b;
+  box-shadow: 3px 3px 6px #005070;
   
 }
 
@@ -43,26 +171,29 @@
     font-size: 50px;
     font-weight: bold;
     position: relative;
-    bottom: 500px;
-    margin-left: 90px;
+    bottom: 570px;
+    margin-left: 325px;
     font-family: 'EB Garamond', serif;
     color: #005070;
 
 
 }
 
+/* 
 .container{
   margin-left: 50px;
   position: relative;
   bottom: 400px;
-}
+} */
 
 #places p{
     font-size: 19px;
-    width: 22%;
+    width: 68%;
     margin-top: 30px;
     line-height: 1.6;
     color: black;
+    position: relative;
+    top: 500px;
    }
 
  footer {
@@ -91,18 +222,11 @@
 
 #alaraysPool .button1{
   width: 250px;
-  height: 60px;
+  height: 40px;
   position: relative;
-  left: 450px;
-  bottom: 300px;
-}
-
-#alaraysPool .button2{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 450px;
-  bottom: 300px;
+  left: 700px;
+  bottom: 110px;
+  background-color:white;
 }
 
 #jordanRiver .button1{
