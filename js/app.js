@@ -93,15 +93,22 @@ function render(){
     const paragraph = document.createElement ('p');
     divEl.appendChild(paragraph);
     paragraph.setAttribute('class','img__description');
+    paragraph.textContent=(`${Places.all[largestRateArray[i]].name}`);
     let aTag=document.createElement('a');
-    paragraph.appendChild(aTag);
-    aTag.textContent=(`${Places.all[largestRateArray[i]].name}`);
-    aTag.setAttribute('href',`./Recomendations.html`);
+    divEl.appendChild(aTag);
+    aTag.textContent = ('Read More...');
+    aTag.setAttribute('href', `./Recomendations.html`);
     const spanEl = document.createElement ('span');
     divEl.appendChild(spanEl);
     spanEl.setAttribute('class','Rate');
-    spanEl.textContent=`* The Total Rate :  ${Places.all[largestRateArray[i]].placeRate}`;
-
+    // spanEl.textContent=`${Places.all[largestRateArray[i]].placeRate}`;
+    let rate = document.createElement('i');
+    spanEl.appendChild(rate);
+    rate.setAttribute('class', 'fas fa-star');
+    rate.textContent = `${Places.all[largestRateArray[i]].placeRate}`;
+    const spanE2 = document.createElement ('span');
+    divEl.appendChild(spanE2);
+    spanE2.setAttribute('class', 'readMore');
   }
 }
 render();
