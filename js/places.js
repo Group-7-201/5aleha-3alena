@@ -29,7 +29,7 @@ function placesRender(){
   for (let i=0; i<Places.all.length; i++){
     let divEl=document.createElement('div');
     placesSection.appendChild(divEl);
-    divEl.id='placeInfo';
+    divEl.id=`${idArray[i]}`;
     let item1=document.createElement('img');
     divEl.appendChild(item1);
     item1.src=Places.all[i].path;
@@ -42,10 +42,11 @@ function placesRender(){
     titleEl.appendChild(parEl);
     parEl.textContent=`${paragraphArray[i]}`;
     parEl.className='place-paragraph';
-    // parEl.id=`${idArray[i]}`;
+    parEl.id= 'prgh';
     let par2El=document.createElement('p');
     titleEl.appendChild(par2El);
     par2El.textContent=`* Total Rate :  ${Places.all[i].placeRate}`;
+    par2El.id = 'prgh2';
 
     let div1El=document.createElement('div');
     divEl.appendChild(div1El);
@@ -69,6 +70,7 @@ for (let i=0; i<Places.all.length; i++){
         Places.all[i].placeRate++;
       }
     store();
+    location.reload();
     }
   }
 }

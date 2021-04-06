@@ -97,10 +97,10 @@ function render(){
     paragraph.appendChild(aTag);
     aTag.textContent=(`${Places.all[largestRateArray[i]].name}`);
     aTag.setAttribute('href',`./Recomendations.html`);
-    const paragraph1 = document.createElement ('p');
-    divEl.appendChild(paragraph1);
-    paragraph1.setAttribute('class','Rate');
-    paragraph1.textContent=`* The Total Rate :  ${Places.all[largestRateArray[i]].placeRate}`;
+    const spanEl = document.createElement ('span');
+    divEl.appendChild(spanEl);
+    spanEl.setAttribute('class','Rate');
+    spanEl.textContent=`* The Total Rate :  ${Places.all[largestRateArray[i]].placeRate}`;
 
   }
 }
