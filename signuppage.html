@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>sign up</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/signuppage.css">
+
+  
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <div id="display-box">    
+                <div class="slideshow-container">
+            
+                    <div class="mySlides fade">
+                      <img src="./images/zW3k5Dk1NV.jpg" style="width:100%" height="550px">
+                      <div class="text">Find The Top 10 Friendly<br/> Places In Jordan</div>
+                      <button class="btnExplore">Explore</button>
+                    </div>
+                    
+                    <div class="mySlides fade">
+                      <img src="./images/alarays pool.jpg" style="width:100%" height="550px">
+                      <div class="text">Plan Your Trip</div>
+                      <button class="btnExplore">Explore</button>
+                    </div>
+                    
+                    <div class="mySlides fade">                      
+                      <img src="./images/wp4446840.jpg" style="width:100%" height="550px">
+                      <div class="text"> Explore Our Culture</div>
+                      <button class="btnExplore">Explore</button>
+                    </div>
+                    
+                    </div>
+                    <br>
+                    
+                    <div style="text-align:center">
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                      <span class="dot"></span> 
+                    </div>
+            
+            <div id="navbar">
+                <div id="left-nav">
+                    <img src="./images/logofinal3.png" alt="" width="60px">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./Recomendations.html">Recomendations</a></li>
+                        <li><a href="./people.html">Homestay</a></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./contactUs.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div id="clear"></div>
+   <main id="main">
+       <div id="box"></div>
+        <div class="div1">
+          <h1>Sign Up</h1>
+          <br><br>
+          <input  onkeydown="myfun()" class="in"id="in1" type="text" placeholder="Enter First Name"></input>
+        <!-- <div class="d" id="div2">Your name should have minimun7 letters and shouldn't contain special characters</div> -->
+       <input class="in" onkeydown="myfun1()" id="in2" type="number" placeholder="Enter your age in number"></input> 
+      <div class="d" id="div3"></div>
+          <input class="in" onkeydown="myfun2()" id="in3" type="text" placeholder="Enter your E-mail address"></input> 
+      <!-- <div class="d" id="div4">E-mail should have @ sympol and .com</div> -->
+          <input class="in" id="in4" onkeydown="myfun3()"type="password" placeholder="Enter your password"></input> 
+         <!-- <div class="d" onkeydown="myfun4()"  id="div5">Password must have minimum 7 characters and one number</div>  -->
+      <input class="in" id="in5" onkeydown="myfun4()"type="password" placeholder="Re-enter password"></input> 
+      <!-- <div class="d" id="div6">Password not matched</div>  -->
+       <br><br>
+      <button id="sign"onclick="signup()">Sign Up</button>
+      <!-- <div  class="d" id="div7">Sign Up successful</div>  -->
+        </div>
+        
+   </main>
+   <footer>
+    <div id="footer-container">
+        <div id="footer-logo">
+            <img src="./images/logofinal3.png" alt="" width="100">
+            <div id="social-media">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-tiktok"></i>
+            </div>
+        </div>
+        <div class="footer-box">
+            <ul>
+                <p>Similer Links</p>
+                <li><a href="">About</a></li>
+                <li><a href="">Recumendatios</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <ul>
+                <p>Recumended Hotels</p>
+                <li><a href="https://www.marriott.com/hotels/travel/ammxr-the-st-regis-amman/?scid=bb1a189a-fec3-4d19-a255-54ba596febe2&y_source=1_MTMwMzkyMTYtNzE1LWxvY2F0aW9uLmdvb2dsZV93ZWJzaXRlX292ZXJyaWRl">The St. Regis Amman</a></li>
+                <li><a href="https://www.google.com/search?q=w+amman&sxsrf=ALeKk02evXOKVLHidi1b9ImbLuzNednCHg%3A1617530159354&ei=L41pYMGRFYH4sAeLpavACA&hotel_occupancy=&oq=w+amman&gs_lcp=Cgdnd3Mtd2l6EAMyDgguEMcBEK8BEJECEJMCMgIIADICCAAyAggAMgIIADIICC4QxwEQrwEyAggAMgUIABDJAzICCAAyBAgAEEM6BAgjECc6CwguEMcBEK8BEJECOgUIABCRAjoICAAQsQMQgwE6BQgAELEDOgIILlDEIFjbJ2CBK2gAcAJ4AIABigKIAZoOkgEFMC4yLjaYAQCgAQGqAQdnd3Mtd2l6wAEB&sclient=gws-wiz&ved=0ahUKEwiB5b60qeTvAhUBPOwKHYvSCogQ4dUDCA0&uact=5">W Amman</a></li>
+                <li><a href="https://www.fourseasons.com/amman/?seo=google_local_amm1_emea">FOUR SEASONS</a></li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <ul>
+                <p>Related Links</p>
+                <li><a href="https://ar.airbnb.com/?_set_bev_on_new_domain=1617269097_NjliZGFhNDcwNWQ0">Airbnb</a></li>
+                <li><a href="https://www.hometogo.com/">Home to go</a></li>
+                <li><a href="https://www.flipkey.com/">Flip key</a></li>
+            </ul>
+        </div>
+        <div class="footer-box">
+            <ul>
+                <p>Social Media</p>
+                <li><a href="">alalal</a></li>
+                <li><a href="">alalal</a></li>
+                <li><a href="">alalal</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script src="./js/animations.js"></script>
+
+<script src="./js/signuppage.js"></script>
+
+</body>
+</html>
