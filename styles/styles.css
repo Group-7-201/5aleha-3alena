@@ -155,6 +155,7 @@ img {vertical-align: middle;}
 	box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
 	z-index: 10000;
   }
+
   .card .imageBox{
 	position: relative;
 	width: 100%;
@@ -177,12 +178,22 @@ img {vertical-align: middle;}
 	object-fit: cover;
   }
   .card .datalist{
-	position: absolute;
-	top: 0;
-	right: 0;
-	box-sizing: border-box;
-	padding: 0px;
-	text-align: justify;
+	
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    box-sizing: border-box;
+    padding: 0px;
+    font-size: 30px;
+	color: #005070;
+
+  }
+
+  .card .datalist p{
+	  padding: 30px;
+  }
+  .card .datalist i{
+	  padding: 20px;
   }
   
 /*End ofabout us page*/
@@ -242,14 +253,17 @@ header #navbar, #left-nav , ul{
 
 #navbar{
 	width: 100%;
-    background-color: #70695f69;
-    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 75%);
+    /* background-color: #70695f69;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 75%); */
     position: fixed;
     top: 0;
 	height: 70px;
-
     z-index: 1;
 }
+
+/* #left-nav { background-color:#000; }
+.nav-transparent { background-color:transparent;} */
+
 #left-nav img{
 	padding-left: 20px;
 	padding-top: 6px;
@@ -539,31 +553,55 @@ footer ul li{
 
 /* --- Images-top-rated---*/
 
-#container-heading h2{
+
+#top-rated-container h3{
 	font-size: 30px;
 	font-weight: bolder;
-	text-align: center;
-    padding-top: 90px;
+    padding: 20px;
 	color:#005070;
 	letter-spacing:0.1em;
+	text-align: center;
+	padding-bottom: 50px;
 }
-#top-rated {
+#top-rated-container{
 	padding-top: 60px;
-	box-sizing: border-box;
+	width: 100%;
+}  
+  /* relevant styles */
+  .img__wrap {
+	position: relative;
+    height: 200px;
+    width: 257px;
+    display: inline-block;
+    margin-left: 8px;
+    box-shadow: 0px 0px 7px 3px;
+    color: #005070;
+  }
+  .img__description a{
+	  color: #fff;
+	  text-decoration: none;
+  }
+  .img__description {
+	position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(2 4 6 / 60%);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    padding-top: 90px;
+    padding-left: 85px;
+  
+	/* transition effect. not necessary */
+	transition: opacity .2s, visibility .2s;
   }
   
-  /* Create four equal columns that floats next to each other */
-  .column {
-	float: left;
-	width: 25%;
-	height: 300px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-	content: "";
-	display: table;
-	clear: both;
+  .img__wrap:hover .img__description {
+	visibility: visible;
+	opacity: 1;
   }
 
 /* --- End of Images-top-rated---*/
