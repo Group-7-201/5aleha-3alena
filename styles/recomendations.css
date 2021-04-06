@@ -69,7 +69,7 @@
 	clear: both;
 }
 
-#button1{
+.button1{
   width: 250px;
   height: 60px;
   position: relative;
@@ -78,7 +78,7 @@
   background-image: url(/images/like.jpg);
 }
 
-#button2{
+.button2{
   width: 250px;
   height: 60px;
   position: relative;

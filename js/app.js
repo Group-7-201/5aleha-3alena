@@ -15,7 +15,6 @@ function Places(name, info) {
   this.path = `./images/${name}.jpg`;
   this.placeInf = info;
   this.placeRate = 0;
-  this.rate=0;
   reStore();
   if (reStoreValue === null) {
     Places.all.push(this);
