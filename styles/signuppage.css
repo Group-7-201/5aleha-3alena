@@ -1,0 +1,74 @@
+.div1
+{
+margin-top: 70px;
+height:450px;
+width:550px;
+border:.5px solid #70695F;
+background:rgba(0, 0, 0, 0.438);
+text-align: center;
+padding: 15px 25px ;
+/* background-image: url(../images/alarays\ pool.jpg); */
+}
+
+
+.in
+{
+  height:20px;
+  width:360px;
+  padding:10px;
+  border-radius: 3px ;
+  margin-bottom: 12px;
+  border-left-color: #d6ebf3;
+  border-right-color: #c5dce6;
+  
+}
+/* .d
+{
+height:35px;
+width:385px;
+
+} */
+#main
+{
+  width:400px;
+  height:30px;
+  /* margin-left: 450px; */
+  display: flex;
+  margin: auto;
+}
+/* #div2,#div4,#div5,#div6,#div7 {
+    margin-left: 60px;
+    color: #BA9B7A;
+} */
+footer{
+    margin-top: 470px;
+}
+body
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    top: 0px;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../images/alarays\ pool.jpg) ;
+    background-size: cover; 
+}
+h1{
+    font-size:30px;
+    margin-bottom: -5px;
+    font-family:cursive;
+    color: #ffffff;
+    font-style:oblique;
+    margin-top: 10px;
+    text-shadow:1.5px 1.5px  rgba(245, 222, 179, 0.705);
+}
+#sign{
+    width: 35%;
+    color:#BA9B7A ;
+    padding: 5px;
+    background-color: #005070 ;
+    font-size: 17px;
+    margin-top: 15px;
+}
+

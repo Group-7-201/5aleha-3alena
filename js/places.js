@@ -29,8 +29,10 @@ function placesRender() {
   for (let i = 0; i < Places.all.length; i++) {
     let divEl = document.createElement('div');
     placesSection.appendChild(divEl);
-    divEl.id = 'placeInfo';
-    let item1 = document.createElement('img');
+
+    divEl.id=`${idArray[i]}`;
+    let item1=document.createElement('img');
+
     divEl.appendChild(item1);
     item1.src = Places.all[i].path;
     item1.alt = Places.all[i].name;
@@ -40,12 +42,15 @@ function placesRender() {
     titleEl.id = `${Places.all[i].name}`;
     let parEl = document.createElement('p');
     titleEl.appendChild(parEl);
-    parEl.textContent = `${paragraphArray[i]}`;
-    parEl.className = 'place-paragraph';
-    // parEl.id=`${idArray[i]}`;
-    let par2El = document.createElement('p');
+
+    parEl.textContent=`${paragraphArray[i]}`;
+    parEl.className='place-paragraph';
+    parEl.id= 'prgh';
+    let par2El=document.createElement('p');
     titleEl.appendChild(par2El);
-    par2El.textContent = `* Total Rate :  ${Places.all[i].placeRate}`;
+    par2El.textContent=`* Total Rate :  ${Places.all[i].placeRate}`;
+    par2El.id = 'prgh2';
+
 
     let div1El = document.createElement('div');
     divEl.appendChild(div1El);
@@ -67,7 +72,10 @@ for (let i = 0; i < Places.all.length; i++) {
       if (event.target.id === idArray[i]) {
         Places.all[i].placeRate++;
       }
-      store();
+
+    store();
+    location.reload();
+
     }
   }
 }
