@@ -187,7 +187,7 @@
 
 #prgh{
   font-size: 18px;
-  color: black;
+  color:#70695F;
 }
 
 #prgh2{
@@ -199,7 +199,7 @@
   width: 500px;
   height: 350px;
   margin-left: 70px;
-  /* border: solid 2px black; */
+  border: solid 2px black;
   box-shadow: black 2px 2px 4px;
 }
 
@@ -207,12 +207,13 @@
   font-size: 25px;
   margin-left: 70px;
   width: 500px;
-  /* border: solid 2px  #005070; */
+  border: solid 2px  black;
   line-height: 1.3;
   box-shadow: black 2px 2px 4px;
   font-family: 'EB Garamond', serif;
   font-weight: bold;
   color:#005070;
+  
 }
 
 
@@ -220,47 +221,52 @@
   width: 500px;
   height: 350px;
   margin-left: 50px;
-  border: solid 2px #005070;
-  box-shadow: #005070 2px 2px 4px;
+  border: solid 2px black;
+  box-shadow: black 2px 2px 4px;
   position: relative;
   left: 600px;
-  bottom: 570px;
+  bottom: 520px;
 }
 
 #jordanRiver h3{
   font-size: 25px;
   margin-left: 50px;
   width: 500px;
-  border: solid 2px  #005070;
+  border: solid 2px  black;
   line-height: 1.3;
-  box-shadow: #005070 2px 2px 4px;
+  box-shadow: black 2px 2px 4px;
   font-family: 'EB Garamond', serif;
   font-weight: bold;
   color: #005070;
   position: relative;
   left: 600px;
-  bottom: 570px;
-
+  bottom: 520px;
+  padding-bottom: 25px;
 }
 
 #kingtalalDom img{
   width: 500px;
   height: 350px;
-  margin-left: 50px;
-  border: solid 2px #005070;
-  box-shadow: #005070 2px 2px 4px;
+  margin-left: 70px;
+  border: solid 2px black;
+  box-shadow: black 2px 2px 4px;
+  position: relative;
+  bottom: 500px;
 }
 
 #kingtalalDom h3{
   font-size: 25px;
-  margin-left: 50px;
+  margin-left: 70px;
   width: 500px;
-  border: solid 2px  #005070;
+  border: solid 2px  black;
   line-height: 1.3;
-  box-shadow: #005070 2px 2px 4px;
+  box-shadow: black 2px 2px 4px;
   font-family: 'EB Garamond', serif;
   font-weight: bold;
   color: #005070;
+  position: relative;
+  bottom: 500px;
+  
 
 }
 
@@ -268,20 +274,27 @@
   width: 500px;
   height: 350px;
   margin-left: 50px;
-  border: solid 2px #005070;
-  box-shadow: #005070 2px 2px 4px;
+  border: solid 2px black;
+  box-shadow: black 2px 2px 4px;
+  position: relative;
+  left: 600px;
+  bottom: 970px;
 }
 
 #wadiHidan h3{
   font-size: 25px;
   margin-left: 50px;
   width: 500px;
-  border: solid 2px  #005070;
+  border: solid 2px  black;
   line-height: 1.3;
-  box-shadow: #005070 2px 2px 4px;
+  box-shadow: black 2px 2px 4px;
   font-family: 'EB Garamond', serif;
   font-weight: bold;
   color: #005070;
+  position: relative;
+  left: 600px;
+  bottom: 970px;
+  padding-bottom: 30px;
 
 }
 
@@ -289,23 +302,29 @@
 #wadiMujib img{
   width: 500px;
   height: 350px;
-  margin-left: 50px;
-  border: solid 2px #005070;
-  box-shadow: #005070 2px 2px 4px;
-  
+  margin-left: 70px;
+  border: solid 2px  black;
+  box-shadow: black 2px 2px 4px;
+  position: relative;
+  bottom: 1000px;
 }
 
 #wadiMujib h3{
   font-size: 25px;
-  margin-left: 50px;
+  margin-left: 70px;
   width: 500px;
-  border: solid 2px  #005070;
+  border-left: solid 2px  black;
+  border-bottom: solid 2px  black;
+  border-right: solid 2px  black;
+
   line-height: 1.3;
-  box-shadow: #005070 2px 2px 4px;
+  box-shadow: black 2px 2px 4px;
   font-family: 'EB Garamond', serif;
   font-weight: bold;
   color: #005070;
-
+  position: relative;
+  bottom: 1000px;
+  padding-bottom: 30px;
 }
 
 
@@ -313,21 +332,27 @@
   width: 500px;
   height: 350px;
   margin-left: 50px;
-  border: solid 2px #005070;
-  box-shadow: #005070 2px 2px 4px;
+  border: solid 2px black;
+  box-shadow: black 2px 2px 4px;
+  position: relative;
+  left: 600px;
+  bottom: 1550px;
 }
 
 #wadiRum h3{
   font-size: 25px;
   margin-left: 50px;
   width: 500px;
-  border: solid 2px  #005070;
+  border: solid 2px  black;
   line-height: 1.3;
-  box-shadow: #005070 2px 2px 4px;
+  box-shadow: black 2px 2px 4px;
   font-family: 'EB Garamond', serif;
   font-weight: bold;
   color: #005070;
-
+  position: relative;
+  left: 600px;
+  bottom: 1550px;
+  padding-bottom: 30px;
 }
 
 #deadSea img{
@@ -348,7 +373,7 @@
   font-family: 'EB Garamond', serif;
   font-weight: bold;
   color: #005070;
-
+  
 }
 
 #maenHot img{
@@ -464,28 +489,36 @@ footer {
 }
 
 #alaraysPool .button1{
-  width: 250px;
+  width: 40px;
   height: 40px;
   position: relative;
   left: 300px;
   bottom: 45px;
   background-color:white;
+  border-radius: 50%;
+  
+}
+
+#alaraysPool .button1:hover{
+  background-color: #005070;
 }
 
 #jordanRiver .button1{
   width: 250px;
   height: 40px;
   position: relative;
-  left: 700px;
-  bottom: 110px;
+  left: 880px;
+  bottom: 565px;
+  background-color:white;
+
 }
 
 #kingtalalDom .button1{
   width: 250px;
   height: 40px;
   position: relative;
-  left: 700px;
-  bottom: 110px;
+  left: 300px;
+  bottom: 545px;
 }
 
 
@@ -493,8 +526,8 @@ footer {
   width: 250px;
   height: 40px;
   position: relative;
-  left: 700px;
-  bottom: 110px;
+  left: 880px;
+  bottom: 1020px;
 }
 
 
@@ -502,8 +535,8 @@ footer {
   width: 250px;
   height: 40px;
   position: relative;
-  left: 700px;
-  bottom: 110px;
+  left: 300px;
+  bottom: 1050px;
 }
 
 
@@ -511,8 +544,8 @@ footer {
   width: 250px;
   height: 40px;
   position: relative;
-  left: 700px;
-  bottom: 110px;
+  left: 880px;
+  bottom: 1600px;
 }
 
 
