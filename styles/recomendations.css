@@ -68,7 +68,7 @@
  footer {
 	clear: both;
 }
-
+/*
 .button1{
   width: 250px;
   height: 60px;
@@ -76,14 +76,124 @@
   left: 40px;
   bottom: 250px;
   background-image: url(/images/like.jpg);
-}
+} 
 
 .button2{
   width: 250px;
   height: 60px;
   position: relative;
-  left: 800px;
+  left: 100px;
   bottom: 310px;
   background-image: url(/images/dislike.jpg);
 
+}   
+*/
+
+#alaraysPool .button1{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  left: 450px;
+  bottom: 300px;
+}
+
+#alaraysPool .button2{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  left: 450px;
+  bottom: 300px;
+}
+
+#jordanRiver .button1{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  left: 450px;
+  bottom: 270px;
+}
+
+#kingtalalDom .button1{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  left: 450px;
+  bottom: 175px;
+}
+
+
+#wadiHidan .button1{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  left: 450px;
+  bottom: 325px;
+}
+
+
+#wadiMujib .button1{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  left: 450px;
+  bottom: 450px;
+}
+
+
+#wadiRum .button1{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  left: 450px;
+  bottom: 450px;
+}
+
+
+#deadSea .button1{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  left: 450px;
+  bottom: 300px;
+}
+
+
+#maenHot .button1{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  left: 450px;
+  bottom: 270px;
+}
+
+#TempleArtemis .button1{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  left: 450px;
+  bottom: 150px;
+}
+
+#TempleHercules .button1{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  left: 450px;
+  bottom: 210px;
+}
+
+#TreasuryPetra .button1{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  left: 450px;
+  bottom: 270px;
+}
+
+#UmmQais .button1{
+  width: 250px;
+  height: 60px;
+  position: relative;
+  left: 450px;
+  bottom: 210px;
 }
