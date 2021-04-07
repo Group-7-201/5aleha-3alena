@@ -93,7 +93,7 @@ function render(){
     const paragraph = document.createElement ('p');
     divEl.appendChild(paragraph);
     paragraph.setAttribute('class','img__description');
-    paragraph.textContent=(`${Places.all[largestRateArray[i]].name}`);
+    paragraph.textContent=(`${Places.all[largestRateArray[i]].name.toUpperCase()}`);
     let aTag=document.createElement('a');
     divEl.appendChild(aTag);
     aTag.textContent = ('Read More...');

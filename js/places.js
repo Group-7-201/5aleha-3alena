@@ -56,7 +56,7 @@ function placesRender() {
     let titleEl = document.createElement('h3');
     imageDiv.appendChild(titleEl);
     titleEl.className = 'place-title';
-    titleEl.textContent = `${Places.all[i].name}`;
+    titleEl.textContent = `${Places.all[i].name.toUpperCase()}`;
     titleEl.id = `${Places.all[i].name}`;
     let parEl = document.createElement('p');
     imageDiv.appendChild(parEl);
@@ -115,7 +115,7 @@ function placesRender1() {
     let titleEl = document.createElement('h3');
     imageDiv.appendChild(titleEl);
     titleEl.className = 'place-title';
-    titleEl.textContent = `${Places.all[i].name}`;
+    titleEl.textContent = `${Places.all[i].name.toUpperCase()}`;
     titleEl.id = `${Places.all[i].name}`;
     let parEl = document.createElement('p');
     imageDiv.appendChild(parEl);
