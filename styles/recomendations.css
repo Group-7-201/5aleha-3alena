@@ -1,199 +1,144 @@
-
-#places {
-  margin-top: 100px;
+/* *{
+  font-family: 'Caladea', serif;
+} */
+.row {
+  width: 100%;
+  display: flex;
 }
 
-#first-header{
-  position: relative;
-  font-family: 'EB Garamond', serif;
-  font-weight: bold;
-  font-size: 50px;
-  text-align: center;
-  margin-top: 50px;
-  color: #005070;
-}
-
-#main-prgh{
-  width: 50%;
-  text-align: center;
-  font-size: 25px;
-  line-height: 1.6;
-  margin-left: 338px;
-  margin-top: 30px;
-  font-family: 'EB Garamond', serif;
-  font-weight: bold;
-
-
-}
-
-#places img {
-  display: block;
-	width: 700px;
-	height:500px;
-  margin-left: 450px;
-  margin-right: auto;
-  border:  solid #00000057 2px;
-  box-shadow: 3px 3px 6px #0000006b;
+.column2 ,.column1{
+  width: 42%;
+  margin: auto;
   
 }
 
+#places img{
+  width: 550px;
+  height: 300px;
+  border-radius: 10px 10px 0px 0px ;
+  /* float: left; */
+}
 
-#places h3{
-   /* clear: both; */
-    font-size: 50px;
-    font-weight: bold;
-    position: relative;
-    bottom: 500px;
-    margin-left: 90px;
-    font-family: 'EB Garamond', serif;
-    color: #005070;
+.imageDiv{
+  width: 550px;
+  height: 580px;
+  border: 1px solid #000000e3;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 1px 1px 14px 0px;
+  border-radius: 10px;
+}
+.place-title{
+  font-size: 30px;
+  color: #005070;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
 
+.desc{
+  font-size: 18px;
+	color: #70695F;
+  line-height: 1.6;
+  text-align: center;
+  padding: 20px;
+}
+
+.rate{
+  text-align: center;
+}
+
+#pop-cities{
+  padding-top: 60px;
+  width: 100%;
+  margin: auto;
+}
+.ss{
+  display: inline-block;
+  width: 22%;
+  margin-left: 33px;
+}
+
+#pop-cities h1{
+  font-size: 30px;
+	font-weight: bolder;
+  padding: 60px 0px 60px 0px;
+  letter-spacing:0.2em;
+	color:#005070;
+	text-align: center;
+}
+
+#pop-cities img{
+  box-shadow: 2px 2px 4px #005070;
+  /* margin-left: 33px; */
 
 }
 
-.container{
-  margin-left: 50px;
-  position: relative;
-  bottom: 400px;
+#pop-cities img:hover{
+  transform: scale(1.09);
 }
 
-#places p{
-    font-size: 19px;
-    width: 22%;
-    margin-top: 30px;
-    line-height: 1.6;
-    color: black;
-   }
-
- footer {
-	clear: both;
+#amman{
+  width: 290px;
+  height: 260px;
+  
 }
-/*
+#amman h2 p{
+  margin-left: 10px;
+}
+
+#madaba{
+  width: 290px;
+  height: 260px;
+}
+
+#pop-cities h2{
+  padding-top: 10px;
+  font-size: 30px;
+	font-weight: bolder;
+  letter-spacing:0.2em;
+	color:#005070;
+	text-align: center;
+}
+
+#pop-cities p{
+	color: #70695F;
+  line-height: 1.6;
+	font-size: 15px;
+  text-align: center;
+  padding-bottom: 60px;
+}
 .button1{
-  width: 250px;
-  height: 60px;
+  background-image: url(/images/heart-btn.png);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   position: relative;
-  left: 40px;
-  bottom: 250px;
-  background-image: url(/images/like.jpg);
-} 
+  bottom: 35px;
+  left: 210px;
 
-.button2{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 100px;
-  bottom: 310px;
-  background-image: url(/images/dislike.jpg);
-
-}   
-*/
-
-#alaraysPool .button1{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 450px;
-  bottom: 300px;
 }
 
-#alaraysPool .button2{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 450px;
-  bottom: 300px;
+#recom{
+  margin-top: 60px;
+  padding-top: 60px;
 }
 
-#jordanRiver .button1{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 450px;
-  bottom: 270px;
+#recom h1{
+  font-size: 30px;
+	font-weight: bolder;
+  padding: 20px;
+	color:#005070;
+	letter-spacing:0.1em;
+  text-align: center;
 }
 
-#kingtalalDom .button1{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 450px;
-  bottom: 175px;
+#recom p{
+  padding: 20px;
+	color: #70695F;
+  line-height: 25px;
+	font-size: 20px;
+  text-align: center;
+  padding-bottom: 60px;
 }
 
-
-#wadiHidan .button1{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 450px;
-  bottom: 325px;
-}
-
-
-#wadiMujib .button1{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 450px;
-  bottom: 450px;
-}
-
-
-#wadiRum .button1{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 450px;
-  bottom: 450px;
-}
-
-
-#deadSea .button1{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 450px;
-  bottom: 300px;
-}
-
-
-#maenHot .button1{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 450px;
-  bottom: 270px;
-}
-
-#TempleArtemis .button1{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 450px;
-  bottom: 150px;
-}
-
-#TempleHercules .button1{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 450px;
-  bottom: 210px;
-}
-
-#TreasuryPetra .button1{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 450px;
-  bottom: 270px;
-}
-
-#UmmQais .button1{
-  width: 250px;
-  height: 60px;
-  position: relative;
-  left: 450px;
-  bottom: 210px;
-}
