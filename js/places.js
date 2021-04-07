@@ -3,13 +3,15 @@
 
 let placesSection = document.getElementById('places');
 
-let normalPlaces=JSON.parse(localStorage.getItem('places')) || [];
+let normalPlaces = JSON.parse(localStorage.getItem('places')) || [];
 
-for (let i=0; i<normalPlaces.length; i++){
-  let placesObj=new Places (normalPlaces[i].name,normalPlaces[i].placeInfo);
+for (let i = 0; i < normalPlaces.length; i++) {
+  let placesObj = new Places(normalPlaces[i].name, normalPlaces[i].placeInfo);
 }
+
 let paragraphArray= [
   'This is the blessing of the most beautiful ponds in Jordanas it exists between themountain range is located in the village king composed scene aesthetically pleasing in thespring, his pool host sraretypes of animals and birds, such as: otter,fish owl,river and water turtles.',
+
   'Stand beside the Jordan River where it’s thought Jesus was baptized on this private 4-hour trip from Amman. Travel to the ‘Bethany Beyond the Jordan’ baptism site, also known as El-Maghtas, and tour the riverbanks and ruins of ancient churches, wells, and baptismal pools.',
   'The dam is 92 meters high, which make the flood control system look like a pretty nice ski jump, the lake can contain 90 millions of water cubic meters',
   ' It’s 4 km canyon that can be extended to 9 km depending on the physical ability of hikers. A beautiful black basaltic canyon filled with narrow gorges,fresh natural pools, mesmerizing green vegetation and wild life. Two declimbs reaching 3 meters.',
@@ -23,7 +25,8 @@ let paragraphArray= [
   'Umm Qais is a historical and natural sight located in the north of Jordan, known for its ancient ruins of Gadara. Umm Qais has optimal weather and spreading natural landscapes almost all year long.'
 ];
 
-let idArray =['alaraysPool', 'jordanRiver', 'kingtalalDom', 'wadiHidan', 'wadiMujib', 'wadiRum', 'deadSea','maenHot','TempleArtemis','TempleHercules','TreasuryPetra','UmmQais'];
+let idArray = ['alaraysPool', 'jordanRiver', 'kingtalalDom', 'wadiHidan', 'wadiMujib', 'wadiRum', 'deadSea', 'maenHot', 'TempleArtemis', 'TempleHercules', 'TreasuryPetra', 'UmmQais'];
+
 
 
 let row = document.createElement('div');
@@ -57,6 +60,7 @@ function placesRender() {
     titleEl.id = `${Places.all[i].name}`;
     let parEl = document.createElement('p');
     imageDiv.appendChild(parEl);
+
     parEl.textContent=`${paragraphArray[i]}`;
     parEl.className='desc';
     parEl.id= 'prgh';
@@ -65,6 +69,7 @@ function placesRender() {
     par2El.className='rate';
     par2El.textContent=`${Places.all[i].placeRate}`;
     par2El.id = 'prgh2';
+
     let div1El = document.createElement('div');
     imageDiv.appendChild(div1El);
     div1El.id = `${idArray[i]}`;
@@ -87,7 +92,9 @@ for (let i = 0; i < Places.all.length; i = i +2) {
       if (event.target.id === idArray[i]) {
         Places.all[i].placeRate++;
       }
+
     store();
+
      location.reload();
     }
   }
