@@ -51,6 +51,7 @@ function placesRender() {
 
     let item1=document.createElement('img');
     imageDiv.appendChild(item1);
+    item1.className = 'placeImageRecom';
     item1.src = Places.all[i].path;
     item1.alt = Places.all[i].name;
     item1.id = `${Places.all[i].name}`;
@@ -74,11 +75,14 @@ function placesRender() {
     let div1El = document.createElement('div');
     imageDiv.appendChild(div1El);
     div1El.id = `${idArray[i]}`;
-    let button1 = document.createElement('button');
-    div1El.appendChild(button1);
+    let img = document.createElement('img');
+    div1El.appendChild(img);
     // button1.textContent = 'Like';
-    button1.className = 'button1';
-    button1.id = `${idArray[i]}`;
+    img.className = 'button1';
+    img.src = 'images/Star23.jpg';
+    img.setAttribute('width', '100px');
+    img.setAttribute('height', '100px');
+    img.id = `${idArray[i]}`;
   }
 }
 
@@ -111,6 +115,7 @@ function placesRender1() {
 
     let item1=document.createElement('img');
     imageDiv.appendChild(item1);
+    item1.className = 'placeImageRecom';
     item1.src = Places.all[i].path;
     item1.alt = Places.all[i].name;
     item1.id = `${Places.all[i].name}`;
@@ -132,11 +137,14 @@ function placesRender1() {
     let div1El = document.createElement('div');
     imageDiv.appendChild(div1El);
     div1El.id = `${idArray[i]}`;
-    let button1 = document.createElement('button');
-    div1El.appendChild(button1);
+    let img = document.createElement('img');
+    div1El.appendChild(img);
     // button1.textContent = 'Like';
-    button1.className = 'button1';
-    button1.id = `${idArray[i]}`;
+    img.className = 'button1';
+    img.src = 'images/Star23.jpg';
+    img.setAttribute('width', '100px');
+    img.setAttribute('height', '100px');
+    img.id = `${idArray[i]}`;
   }
 }
 
