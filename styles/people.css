@@ -12,12 +12,10 @@ body{
   float: right;
   border: black;
 } */
-
 #people {
   width: 100%;
   /* float: left; */
 }
-
 #people img {
   display: flex;
   border-radius: 20px;
@@ -34,7 +32,6 @@ body{
   content: "\f095";
   margin-right: 10px;
 }
-
 /* #people2 img {
   display: flex;
     border-radius: 20px;
@@ -42,24 +39,19 @@ body{
     height: 500px;
     margin-left: 30px;
 } */
-
 /* .test {
 display: flex;
 flex-direction: column;
 } */
-
 /* main.peoole{
   position: relative;
   top: 200px;
 } */
-
 /* .clear{
   clear: both;
 } */
-
 #people span h3{
   box-shadow: 2px solid black;
-
 }
 #people h3 {
   border-radius: 10px;
@@ -67,7 +59,6 @@ flex-direction: column;
   bottom: 600px;
   border: 2px solid black;
   font-size: 50px;
-  
   flex-direction: column;
   height: 446px;
   display: flex;
@@ -81,11 +72,9 @@ flex-direction: column;
   font-family: 'EB Garamond', serif;
   color: #005070;
 }
-
 #people h3 h2, #people h3 p {
   padding-top: 110px;
 }
-
 /* #people2 h3 {
   font-size: 50px;
       flex-direction: column;
@@ -99,7 +88,6 @@ flex-direction: column;
       font-family: 'EB Garamond', serif;
       color: #005070;
 } */
-
 #first-header, .first-header {
   text-align: center;
   display: flex;
@@ -113,21 +101,18 @@ flex-direction: column;
   color: white;
   margin-bottom: 30px;
 }
-
 .first-header, image {
   /* border-radius: 5px; */
   height: 500px;
   width: 100%
   /* border-radius: 10px; */
 }
-
 .first-header {
   background-image: url(../images/vibrant-night-sky-with-stars-nebula-galaxy.jpg);
   background-attachment: fixed;
   background-size: 1899px;
   /* border-radius: 10px; */
 }
-
 #people p, h2 {
   font-size: 20px;
   width: 100%;
@@ -136,7 +121,6 @@ flex-direction: column;
   line-height: 1.6;
   color: black;
 }
-
 #people2 p, h2 {
   font-size: 25px;
   width: 100%;
@@ -145,9 +129,7 @@ flex-direction: column;
   line-height: 1.6;
   color: black;
 }
-
 footer {
   clear: both;
 }
-
-#peopleInfo {}
+/* #peopleInfo {} */
