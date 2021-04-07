@@ -272,6 +272,10 @@ header #navbar, #left-nav , ul{
     z-index: 1;
 }
 
+.fa-user:before{
+	padding-right: 5px;
+}
+
 .navbar-scroll{
 	width: 100%;
     position: fixed;
