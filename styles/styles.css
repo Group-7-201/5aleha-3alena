@@ -251,6 +251,13 @@ header #navbar, #left-nav , ul{
     display: inline-block;
 }
 
+#left-nav i{
+	color: #f0fbff;
+}
+
+#left-nav i:hover{
+	color: #0089BB;
+}
 
 #navbar{
 	width: 100%;
@@ -289,7 +296,7 @@ header #navbar, #left-nav , ul{
 #left-nav ul{
 	position: absolute;
     top: 29px;
-    left: 748px;
+    left: 679px;
 }
 
 #left-nav ul li a{
