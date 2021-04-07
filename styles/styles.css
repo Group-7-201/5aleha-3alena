@@ -51,7 +51,7 @@ img {vertical-align: middle;}
 	
 }
 .btnExplore:hover{
-	background-color: #0a0441;
+	background-color: #023447;
 }
 
 /* The dots/bullets/indicators */
@@ -108,7 +108,7 @@ img {vertical-align: middle;}
 	font-size: 20px;
 	padding: 0px 300px 0px 300px;
 	color: #70695F;
-    line-height: 25px;
+    line-height: 1.6;
 	text-align: center;
 }
 #team{
