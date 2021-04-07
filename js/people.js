@@ -22,7 +22,7 @@ function People(name,adress,phoneNumber) {
   }
 }
 People.all = [];
-for (let i=0; i<adressArray.length; i++){
+for (let i=0; i<adressArray.length; i+=2){
   new People (namesArray[i],adressArray[i],phoneNumberArray[i]);
 }
 
@@ -42,48 +42,94 @@ function reStore() {
   }
 }
 let peopleSection = document.getElementById('people');
+// let peopleSectionTwo=document.getElementById('people2');
 function peopleRender(){
   for (let i=0; i<People.all.length; i++){
-    let divEl=document.createElement('div');
-    peopleSection.appendChild(divEl);
-    divEl.id='peopleInfo';
+    let div=document.createElement('div');
+    peopleSection.appendChild(div);
+    div.id='peopleInfo';
+    // div.
+    let span =document.createElement('span');
     let img=document.createElement('img');
-    divEl.appendChild(img);
+    div.appendChild(img);
     img.src=People.all[i].path;
     img.alt=People.all[i].name;
-
-    let h3=document.createElement('h3');
-    divEl.appendChild(h3);
-    h3.textContent=`${People.all[i].peopleName}`;
     
-
+    let h3=document.createElement('h3');
+    
+    h3.textContent=`${People.all[i].peopleName}`;
+    span.appendChild(h3);
+    div.appendChild(span);
     let h2=document.createElement('h2');
     let p=document.createElement('p');
-    let i2El=document.createElement('i');
-    let span2El=document.createElement('span');
-    h3.appendChild(p);
 
+    span.style.boxShadow='2px solid black';
+    // h3.style.boxShadow='20px solid black';
+    h3.appendChild(h2);
+    h3.appendChild(p);
 
     let addressIcon=document.createElement('i');
     let addressText=document.createElement('span');
+    let phoneIcon=document.createElement('i');
+    let phoneNumberSpan=document.createElement('span');
+
+
     addressIcon.classList.add('fa');
     addressIcon.classList.add('fa-map-marker');
+    phoneIcon.classList.add('fa');
+    phoneIcon.classList.add('fa-phone');
+
     addressText.textContent=People.all[i].peopleAdress;
-    h2.appendChild(addressText);
+    phoneNumberSpan.textContent=People.all[i].peoplePhoneNumber;
 
 
     h2.appendChild(addressIcon);
-    h2.appendChild(addressText) ;
-    i2El.classList.add('fa');
-    i2El.classList.add('fa-phone');
+    h2.appendChild(addressText);
 
-    
-    span2El.textContent=People.all[i].peoplePhoneNumber;
-    p.appendChild(i2El);
-    h3.appendChild(h2);
-    p.appendChild(span2El);
-
-    
+    p.appendChild(phoneIcon);
+    p.appendChild(phoneNumberSpan);
   }
+  // for (let i=1; i<People.all.length; i+=2){
+  //   let div=document.createElement('div');
+  //   peopleSectionTwo.appendChild(div);
+    
+  //   let img=document.createElement('img');
+  //   div.appendChild(img);
+  //   img.src=People.all[i].path;
+  //   img.alt=People.all[i].name;
+
+  //   let h3=document.createElement('h3');
+  //   div.appendChild(h3);
+  //   h3.textContent=`${People.all[i].peopleName}`;
+
+  //   let h2=document.createElement('h2');
+  //   let p=document.createElement('p');
+
+  //   h3.appendChild(h2);
+  //   h3.appendChild(p);
+
+  //   let addressIcon=document.createElement('i');
+  //   let addressText=document.createElement('span');
+  //   let phoneIcon=document.createElement('i');
+  //   let phoneNumberSpan=document.createElement('span');
+
+
+  //   addressIcon.classList.add('fa');
+  //   addressIcon.classList.add('fa-map-marker');
+  //   phoneIcon.classList.add('fa');
+  //   phoneIcon.classList.add('fa-phone');
+
+  //   addressText.textContent=People.all[i].peopleAdress;
+  //   phoneNumberSpan.textContent=People.all[i].peoplePhoneNumber;
+
+
+  //   h2.appendChild(addressIcon);
+  //   h2.appendChild(addressText);
+
+  //   p.appendChild(phoneIcon);
+  //   p.appendChild(phoneNumberSpan);
+  // }
+  
 }
+console.log(People.all.length);
 peopleRender();
