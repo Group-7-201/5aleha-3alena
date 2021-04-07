@@ -41,11 +41,15 @@
 	color: #70695F;
   line-height: 1.6;
   text-align: center;
-  padding: 20px;
+  padding: 20px 10px 10px 10px;
 }
 
 .rate{
   text-align: center;
+  margin-top: 60px;
+  margin-left: 400px;
+  font-size: 18px;
+  padding-bottom: 5px;
 }
 
 #pop-cities{
@@ -109,16 +113,29 @@
   padding-bottom: 60px;
 }
 .button1{
-  background-image: url(/images/heart-btn.png);
+  background-image: url(/images/star23.jpg);
   border-radius: 50%;
   width: 50px;
   height: 50px;
   position: relative;
-  bottom: 35px;
-  left: 210px;
-
+  bottom: 48px;
+  left: 490px;
+  background-size: cover;
+  padding: 20px;
+  border: 0px;
 }
 
+.button1:hover{
+  border: 1px solid black;
+  transform: scale(1.1);
+  
+}
+
+#kingtalalDom{
+  position: relative;
+  bottom: 20px;
+  left: ;
+}
 #recom{
   margin-top: 60px;
   padding-top: 60px;

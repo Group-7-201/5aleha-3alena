@@ -53,11 +53,12 @@ function placesRender() {
     imageDiv.appendChild(item1);
     item1.src = Places.all[i].path;
     item1.alt = Places.all[i].name;
+    item1.id = `${Places.all[i].name}`;
     let titleEl = document.createElement('h3');
     imageDiv.appendChild(titleEl);
     titleEl.className = 'place-title';
     titleEl.textContent = `${Places.all[i].name.toUpperCase()}`;
-    titleEl.id = `${Places.all[i].name}`;
+    // titleEl.id = `${Places.all[i].name}`;
     let parEl = document.createElement('p');
     imageDiv.appendChild(parEl);
 
@@ -83,7 +84,6 @@ function placesRender() {
 
 placesRender();
 
-
 for (let i = 0; i < Places.all.length; i = i +2) {
   let placeId = document.getElementById(`${idArray[i]}`);
   placeId.addEventListener('click', handelClick);
@@ -97,6 +97,7 @@ for (let i = 0; i < Places.all.length; i = i +2) {
 
      location.reload();
     }
+
   }
 }
 
@@ -112,11 +113,12 @@ function placesRender1() {
     imageDiv.appendChild(item1);
     item1.src = Places.all[i].path;
     item1.alt = Places.all[i].name;
+    item1.id = `${Places.all[i].name}`;
     let titleEl = document.createElement('h3');
     imageDiv.appendChild(titleEl);
     titleEl.className = 'place-title';
     titleEl.textContent = `${Places.all[i].name.toUpperCase()}`;
-    titleEl.id = `${Places.all[i].name}`;
+    // titleEl.id = `${Places.all[i].name}`;
     let parEl = document.createElement('p');
     imageDiv.appendChild(parEl);
     parEl.textContent=`${paragraphArray[i]}`;
@@ -140,7 +142,6 @@ function placesRender1() {
 
 placesRender1();
 
-
 for (let i = 1; i < Places.all.length; i = i +2) {
   let placeId = document.getElementById(`${idArray[i]}`);
   placeId.addEventListener('click', handelClick);
@@ -151,6 +152,7 @@ for (let i = 1; i < Places.all.length; i = i +2) {
       }
     store();
      location.reload();
+     
     }
   }
 }

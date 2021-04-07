@@ -27,3 +27,14 @@ window.addEventListener('scroll', function(){
   header.classList.toggle('navbar-scroll',windowPostion );
 
 });
+
+
+// let header = document.getElementById('links');
+// let li = header.getElementsByClassName('link');
+// for (let i = 0; i < li.length; i++) {
+//   li[i].addEventListener('click', function() {
+//     let current = document.getElementsByClassName('active');
+//     current[0].className = current[0].className.replace(' active', '');
+//     this.className += ' active';
+//   });
+// }

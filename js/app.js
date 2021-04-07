@@ -97,7 +97,7 @@ function render(){
     let aTag=document.createElement('a');
     divEl.appendChild(aTag);
     aTag.textContent = ('Read More...');
-    aTag.setAttribute('href', `./Recomendations.html`);
+    aTag.setAttribute('href', `./Recomendations.html#${placesName[largestRateArray[i]]}`);
     const spanEl = document.createElement ('span');
     divEl.appendChild(spanEl);
     spanEl.setAttribute('class','Rate');
