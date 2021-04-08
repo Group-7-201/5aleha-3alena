@@ -34,73 +34,50 @@ function reStore() {
     People.all = normalObjects;
   }
 }
-let peopleSection = document.getElementById('people');
+let peopleSection = document.getElementById('people1');
+
 // let peopleSectionTwo=document.getElementById('people2');
 function peopleRender() {
   for (let i = 0; i < People.all.length; i++) {
-    let div = document.createElement('div');
-    peopleSection.appendChild(div);
-    div.id = 'peopleInfo';
-    // div.
-    let span = document.createElement('span');
-    let img = document.createElement('img');
-    div.appendChild(img);
-    img.src = People.all[i].path;
-    img.alt = People.all[i].name;
-    let h3 = document.createElement('h3');
-    h3.textContent = `${People.all[i].peopleName}`;
-    span.appendChild(h3);
-    div.appendChild(span);
-    let h2 = document.createElement('h2');
-    let p = document.createElement('p');
-    span.style.boxShadow = '2px solid black';
-    // h3.style.boxShadow='20px solid black';
-    h3.appendChild(h2);
-    h3.appendChild(p);
-    let addressIcon = document.createElement('i');
-    let addressText = document.createElement('span');
-    let phoneIcon = document.createElement('i');
-    let phoneNumberSpan = document.createElement('span');
+    let h3Div=document.createElement('div');
+    let imgDiv=document.createElement('div');
+    let img=document.createElement('img');
+
+
+    let h3=document.createElement('h3');
+    let h2=document.createElement('h2');
+    let p=document.createElement('p');
+    let addressIcon=document.createElement('i');
+    let addressText=document.createElement('span');
+    let phoneIcon=document.createElement('i');
+    let phoneNumberSpan=document.createElement('span');
+
+
+    img.src=People.all[i].path;
+    img.alt=People.all[i].name;
+    h3.textContent=`${People.all[i].peopleName}`;
+    addressText.textContent=People.all[i].peopleAdress;
+    phoneNumberSpan.textContent=People.all[i].peoplePhoneNumber;
+
+
     addressIcon.classList.add('fa');
-    addressIcon.classList.add('fa-map-marker');
+    addressIcon.classList.add('fa-map-marker-alt');
     phoneIcon.classList.add('fa');
     phoneIcon.classList.add('fa-phone');
-    addressText.textContent = People.all[i].peopleAdress;
-    phoneNumberSpan.textContent = People.all[i].peoplePhoneNumber;
+
+
+    peopleSection.appendChild(h3Div);
+    h3Div.appendChild(imgDiv);
+    imgDiv.appendChild(img);
+    h3Div.appendChild(h3);
+    h3Div.appendChild(h2);
+    h3Div.appendChild(p);
     h2.appendChild(addressIcon);
     h2.appendChild(addressText);
     p.appendChild(phoneIcon);
     p.appendChild(phoneNumberSpan);
   }
-  // for (let i=1; i<People.all.length; i+=2){
-  //   let div=document.createElement('div');
-  //   peopleSectionTwo.appendChild(div);
-  //   let img=document.createElement('img');
-  //   div.appendChild(img);
-  //   img.src=People.all[i].path;
-  //   img.alt=People.all[i].name;
-  //   let h3=document.createElement('h3');
-  //   div.appendChild(h3);
-  //   h3.textContent=`${People.all[i].peopleName}`;
-  //   let h2=document.createElement('h2');
-  //   let p=document.createElement('p');
-  //   h3.appendChild(h2);
-  //   h3.appendChild(p);
-  //   let addressIcon=document.createElement('i');
-  //   let addressText=document.createElement('span');
-  //   let phoneIcon=document.createElement('i');
-  //   let phoneNumberSpan=document.createElement('span');
-  //   addressIcon.classList.add('fa');
-  //   addressIcon.classList.add('fa-map-marker');
-  //   phoneIcon.classList.add('fa');
-  //   phoneIcon.classList.add('fa-phone');
-  //   addressText.textContent=People.all[i].peopleAdress;
-  //   phoneNumberSpan.textContent=People.all[i].peoplePhoneNumber;
-  //   h2.appendChild(addressIcon);
-  //   h2.appendChild(addressText);
-  //   p.appendChild(phoneIcon);
-  //   p.appendChild(phoneNumberSpan);
-  // }
 }
+
 console.log(People.all.length);
 peopleRender();

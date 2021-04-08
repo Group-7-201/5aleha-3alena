@@ -1,135 +1,97 @@
-.table {
-  width: 100%;
-  top: 10px;
-  /* padding-bottom: -1000px; */
-}
-body{
-  background-color: #00000011;
-}
-/* 
-#people2 {
-  width: 50%;
-  float: right;
-  border: black;
-} */
-#people {
-  width: 100%;
-  /* float: left; */
-}
-#people img {
+#people1 {
   display: flex;
-  border-radius: 20px;
-  width: 1000px;
-  height: 600px;
-  margin-left: 160px;
-  box-shadow: 5px 10px #00000049;
-}
-.fa-map-marker:before {
-  content: "\f041";
-  margin-right: 10px;
-}
-.fa-phone:before {
-  content: "\f095";
-  margin-right: 10px;
-}
-/* #people2 img {
-  display: flex;
-    border-radius: 20px;
-    width: 75%;
-    height: 500px;
-    margin-left: 30px;
-} */
-/* .test {
-display: flex;
-flex-direction: column;
-} */
-/* main.peoole{
-  position: relative;
-  top: 200px;
-} */
-/* .clear{
-  clear: both;
-} */
-#people span h3{
-  box-shadow: 2px solid black;
-}
-#people h3 {
-  border-radius: 10px;
-  padding-top: 10px;
-  bottom: 600px;
-  border: 2px solid black;
-  font-size: 50px;
-  flex-direction: column;
-  height: 446px;
-  display: flex;
-  margin: auto;
-  position: relative;
+  flex-wrap: wrap;
   text-align: center;
-  left: 1100px;
-  width: 223px;
-  font-weight: bold;
-  margin-left: 265px;
-  font-family: 'EB Garamond', serif;
-  color: #005070;
+  /* padding-right: 100px; */
 }
-#people h3 h2, #people h3 p {
-  padding-top: 110px;
+
+#people1>div {
+  width: 50%;
+  margin-top: 100px;
 }
-/* #people2 h3 {
-  font-size: 50px;
-      flex-direction: column;
-      display: flex;
-      justify-content: space-around;
-      font-weight: bold;
-      position: relative;
-      bottom: 501px;
-      margin-left: 90px;
-      left: 721px;
-      font-family: 'EB Garamond', serif;
-      color: #005070;
-} */
+
+#people1 img:hover {
+  opacity: 1;
+  /* filter: grayscale(0%); */
+  filter: blur(0);
+  transform: scaleX(1.3);
+  height: 500px;
+}
+
+#people1>div h3, #people1>div h2, #people1>div p {
+  margin-top: 25px;
+  
+}
+#people1>div h2, #people1>div p{
+  font: bold 25px 'EB Garamond, serif'
+}
+
+
+
+#people1 img {
+  /* box-shadow: inset 5 10px 50px #000; */
+  transition: all .5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
+  /* filter: grayscale(50%); */
+  filter: blur(1px);
+  opacity: 0.8;
+  text-align: center;
+  border-radius: 20px;
+  width: 700px;
+  height: 400px;
+}
+
 #first-header, .first-header {
   text-align: center;
   display: flex;
-  margin: auto;
   flex-direction: column;
   justify-content: center;
   font-family: 'EB Garamond', serif;
   font-weight: bold;
   font-size: 50px;
-  margin-top: 50px;
   color: white;
-  margin-bottom: 30px;
 }
+
 .first-header, image {
-  /* border-radius: 5px; */
   height: 500px;
-  width: 100%
-  /* border-radius: 10px; */
+  width: 100%;
+  margin-top: 100px;
 }
+
 .first-header {
   background-image: url(../images/vibrant-night-sky-with-stars-nebula-galaxy.jpg);
   background-attachment: fixed;
   background-size: 1899px;
-  /* border-radius: 10px; */
 }
-#people p, h2 {
-  font-size: 20px;
-  width: 100%;
-  /* display: flex; */
-  margin-top: 30px;
-  line-height: 1.6;
+#people1>div h2 {
+  font-family: 'Kanit', sans-serif;
+
   color: black;
 }
-#people2 p, h2 {
-  font-size: 25px;
-  width: 100%;
-  /* display: flex; */
-  margin-top: 30px;
-  line-height: 1.6;
+
+#people1>div p {
   color: black;
+  font-family: 'Kanit', sans-serif;
 }
-footer {
-  clear: both;
+#people1>div h3 {
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bold;
+  /* margin-top: 50px; */
+  font-size: 35px;
+  line-height: 1.6;
+  color: #0089BB;
 }
-/* #peopleInfo {} */
+
+
+
+.fa-map-marker-alt:before {
+  content: "\f3c5";
+  margin-right: 10px;
+  color: #0089BB;
+}
+
+.fa-phone:before {
+  content: "\f095";
+  color:  rgb(79, 206, 93);
+  margin-right: 10px;
+}
